@@ -6,6 +6,9 @@ plan:
      statement: markdown/premiersProgrammes.md
    - title: Les variables
      statement: markdown/variables.md
+ - title: Arithmétiques et Logiques
+   plan:
+   - title: Les opérateurs arithmétiques
 projects:
   first-project:
     root: /php/helloWorld
