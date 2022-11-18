@@ -1,7 +1,8 @@
 <?php 
 
 // ********* Exécution du code de l'utilisateur *********
-$answer = file_get_contents('./helloWorld.php');
+$file = './helloWorld.php';
+$answer = file_get_contents($file);
     
 if (str_contains($answer, 'exec') || str_contains($answer, 'script')) {
     $output = [];
@@ -9,7 +10,7 @@ if (str_contains($answer, 'exec') || str_contains($answer, 'script')) {
 } else {
     exec('php '. $file, $output, $retval);
 }
-include ('./helloWorld.php');
+include ($file);
 
 // ******** Vérification du code de l'utilisateur ********
 
