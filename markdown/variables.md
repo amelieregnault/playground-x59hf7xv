@@ -24,4 +24,4 @@ echo "Bonjour ", $prenom;
 
 Reproduis le programme ci-dessus.
 
-@[A toi d'essayer !]({"stubs": ["bonjourPrenom.php"], "command": "/bin/bash run.sh"})
+@[A toi d'essayer !]({"stubs": ["bonjourPrenom.php"], "project":"bonjourPrenom", "command": "/bin/bash run.sh"})
