@@ -1,8 +1,6 @@
 title: Cours de PHP Script
 plan:
  - title: Premiers Programmes 
-   description: Création de programmes simples en utilisant la commande 
-   echo et les variables.
    plan:
    - title: Hello World
      statement: markdown/premiersProgrammes.md
