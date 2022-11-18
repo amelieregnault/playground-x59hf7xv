@@ -1,4 +1,4 @@
-# Premiers Programmes
+# Premiers Programmes - Hello World
 
 Le programme "Hello World !" est le premier programme que l'on écrit quand on essaie un nouveau programme. 
 Il permet de vérifier que notre installation est correcte, et que l'on va pouvoir coder sereinement.
