@@ -11,12 +11,12 @@ plan:
    - title: Les opérateurs arithmétiques
      statement: markdown/arithmetiques.md
 projects:
-  first-project:
+  helloWorld:
     root: /helloWorld
     runner:
       name: php
       version: latest
-  second-project:
+  bonjourPrenom:
     root: /bonjourPrenom
     runner:
        name: php
