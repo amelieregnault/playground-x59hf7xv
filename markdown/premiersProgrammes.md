@@ -20,9 +20,3 @@ echo 'Hello World';
 ```
 
 Recopie correctement ce programme dans l'éditeur ci-dessous  **sans faire de copier-coller** et essaie de l'exécuter.
-
-```php runnable
-<?php
-echo 'Hello World!;
-?>
-```
