@@ -9,7 +9,7 @@ if (preg_match_all($pattern, $answer)) {
     echo("TECHIO> message --channel 'Félicitations ! 🎉 Tu viens de créer ton premier programme PHP.'\r\n");
 } else {
     echo("TECHIO> success false  \r\n");
-    echo("TECHIO> message --channel 'Vérifie que ton code est le même que dans l\'exemple ci-dessus.'\r\n");
+    echo("TECHIO> message --channel 'Vérifie que ton code est le même ci-dessus.'\r\n");
     if (!str_contains($answer, '<?php')) {
         echo("TECHIO> message --channel 'Vérifie que tu as bien écrit la balise ouvrante PHP.'\r\n");
     }
