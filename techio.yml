@@ -2,3 +2,9 @@ title: Cours de PHP Script
 plan:
 - title: Premiers Programmes
   statement: markdown/premiersProgrammes.md
+projects:
+  first-project:
+    root: /php/helloWorld
+    runner:
+      name: php
+      version: latest
