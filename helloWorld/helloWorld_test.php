@@ -10,7 +10,7 @@ if (str_contains($answer, 'exec') || str_contains($answer, 'script')) {
 } else {
     exec('php '. $file, $output, $retval);
 }
-include ($file);
+
 
 // ******** Vérification du code de l'utilisateur ********
 
@@ -33,4 +33,7 @@ if ($retval===0 && count($output) === 1 && $output[0]==='Hello World !') {
         echo("TECHIO> message --channel 'Vérifie que ta chaîne de caractère \"Hello World !\" est correctement écrit.'\r\n");
     }
 }
+
+// ************* Exécution du programme *************
+include ($file);
 ?>
