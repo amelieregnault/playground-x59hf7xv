@@ -20,3 +20,5 @@ echo 'Hello World';
 ```
 
 Recopie correctement ce programme dans l'éditeur ci-dessous  **sans faire de copier-coller** et essaie de l'exécuter.
+
+@[Hello World !]({"stubs": ["helloWorld.php"], "command": "/bin/bash run.sh"})
