@@ -1,15 +1,8 @@
 <?php 
 
-$answer = file_get_contents('./helloWorld.php');
+include "./utile.php";
 
-if (str_contains($answer, 'exec') || str_contains($answer, 'script')) {
-  $output = [];
-  $retval = 1;
-} else {
-    exec('php helloWorld.php', $output, $retval);
-}
-var_dump($output);
-var_dump($retval);
+extract(execUserCode('./helloWorld.php'));
 
 if ($retval===0 && count($output) === 1 && $output[0]==='Hello World !') {
     include ('./helloWorld.php');
