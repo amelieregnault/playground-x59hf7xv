@@ -1,7 +1,5 @@
 # Premiers Programmes
 
-## 1) Hello World !
-
 Le programme "Hello World !" est le premier programme que l'on écrit quand on essaie un nouveau programme. 
 Il permet de vérifier que notre installation est correcte, et que l'on va pouvoir coder sereinement.
 
@@ -23,7 +21,7 @@ Recopie correctement ce programme dans l'éditeur ci-dessous  **sans faire de co
 
 @[A toi d'essayer !]({"stubs": ["helloWorld.php"], "command": "/bin/bash run.sh"})
 
-### Explications supplémentaires
+## Explications supplémentaires
 
 1) Pourquoi faut-il écrire `<?php` au début du programme ?
 

@@ -1,7 +1,9 @@
 title: Cours de PHP Script
 plan:
-- title: Premiers Programmes
+- title: Premiers Programmes - Hello World
   statement: markdown/premiersProgrammes.md
+- title: Premiers Programmes - Variables
+  statement: markdown/variables.md
 projects:
   first-project:
     root: /php/helloWorld
