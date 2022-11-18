@@ -9,6 +9,7 @@ plan:
  - title: Arithmétiques et Logiques
    plan:
    - title: Les opérateurs arithmétiques
+     statement: markdown/arithmetiques.md
 projects:
   first-project:
     root: /php/helloWorld
