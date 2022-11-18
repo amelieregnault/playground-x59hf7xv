@@ -12,7 +12,7 @@ plan:
      statement: markdown/arithmetiques.md
 projects:
   first-project:
-    root: /php/helloWorld
+    root: /php
     runner:
       name: php
       version: latest
