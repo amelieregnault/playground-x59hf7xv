@@ -30,7 +30,7 @@ souvent utilisé en association avec du code HTML. La balise ouvrante
 `<?php` et la balise fermante `?>` vont permettre de séparer le code PHP
 du code HTML.
 
-2) Pourquoi nous n'avons pas utilisé la balise fermante `<?php` dans
+2) Alors, pourquoi nous n'avons pas utilisé la balise fermante `?>` dans
 le programme Hello World ?
 
 Lorsqu'il n'y a que du code PHP dans un fichier, il est préférable de

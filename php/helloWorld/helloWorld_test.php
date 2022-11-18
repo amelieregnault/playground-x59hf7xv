@@ -2,9 +2,17 @@
 
 $answer = file_get_contents('./helloWorld.php');
 
-$pattern = "/<[?]php(\s)*echo\s['\"]Hello World !['\"]\s?;$/";
+if (str_contains($answer, 'exec') || str_contains($answer, 'script')) {
+  $output = [];
+  $retval = 1;
+} else {
+    exec('php helloWorld.php', $output, $retval);
+}
+var_dump($output);
+var_dump($retval);
 
-if (preg_match_all($pattern, $answer)) {
+if ($retval===0 && count($output) === 1 && $output[0]==='Hello World !') {
+    include ('./helloWorld.php');
     echo("TECHIO> success true \r\n");
     echo("TECHIO> message --channel 'Félicitations ! 🎉 Tu viens de créer ton premier programme PHP.'\r\n");
 } else {
