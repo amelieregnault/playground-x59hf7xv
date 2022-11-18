@@ -3,8 +3,6 @@
 include "./utile.php";
 
 extract(execUserCode('./helloWorld.php'));
-
-var_dump($output);
 include ('./helloWorld.php');
 
 if ($retval===0 && count($output) === 1 && $output[0]==='Hello World !') {
