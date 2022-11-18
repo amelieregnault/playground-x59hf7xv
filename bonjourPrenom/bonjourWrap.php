@@ -16,3 +16,8 @@ function lireLigne()
 
     return $name;
 }
+
+$name = getName();
+global $name;
+echo $name, "\n";
+include './bonjourPrenom.php';

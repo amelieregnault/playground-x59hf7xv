@@ -16,3 +16,8 @@ projects:
     runner:
       name: php
       version: latest
+  second-project:
+    root: /bonjourPrenom
+    runner:
+       name: php
+       version: latest

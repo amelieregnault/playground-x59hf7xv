@@ -36,4 +36,3 @@ if ($retval===0 && count($output) === 1 && $output[0]==='Hello World !') {
 
 // ************* Exécution du programme *************
 include ($file);
-?>
