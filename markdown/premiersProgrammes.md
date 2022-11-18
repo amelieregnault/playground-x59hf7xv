@@ -23,6 +23,10 @@ Recopie correctement ce programme dans l'éditeur ci-dessous  **sans faire de co
 
 ## Explications supplémentaires
 
+1. num 1
+2. num 2
+3. num 3
+
 1. Pourquoi faut-il écrire `<?php` au début du programme ?
 
 PHP est un langage destiné à la production de page web. Il est donc 
