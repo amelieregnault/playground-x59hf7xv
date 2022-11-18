@@ -25,6 +25,8 @@ Recopie correctement ce programme dans l'éditeur ci-dessous  **sans faire de co
 
 1. num 1 `toto`
 
+toto
+
 2. num 2
 3. num 3
 
