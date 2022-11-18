@@ -1,9 +1,13 @@
 title: Cours de PHP Script
 plan:
-- title: Premiers Programmes - Hello World
-  statement: markdown/premiersProgrammes.md
-- title: Premiers Programmes - Variables
-  statement: markdown/variables.md
+ - title: Premiers Programmes 
+   description: Création de programmes simples en utilisant la commande 
+   echo et les variables.
+   plan:
+   - title: Hello World
+     statement: markdown/premiersProgrammes.md
+   - title: Les variables
+     statement: markdown/variables.md
 projects:
   first-project:
     root: /php/helloWorld
