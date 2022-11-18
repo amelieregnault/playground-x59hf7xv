@@ -1,9 +1,17 @@
 <?php 
 
-include "./utile.php";
-
-extract(execUserCode('./helloWorld.php'));
+// ********* Exécution du code de l'utilisateur *********
+$answer = file_get_contents('./helloWorld.php');
+    
+if (str_contains($answer, 'exec') || str_contains($answer, 'script')) {
+    $output = [];
+    $retval = 1;
+} else {
+    exec('php '. $file, $output, $retval);
+}
 include ('./helloWorld.php');
+
+// ******** Vérification du code de l'utilisateur ********
 
 if ($retval===0 && count($output) === 1 && $output[0]==='Hello World !') {
     echo("TECHIO> success true \r\n");
