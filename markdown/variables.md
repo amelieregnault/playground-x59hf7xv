@@ -10,9 +10,10 @@ Pour arriver à ce résultat, il nous faut d'abord connaître le prénom de l'ut
 
 Détaillons toutes ces étapes : 
 
-1/ Nous allons utiliser la commande `echo` pour lui demander son prénom. 2/ Ensuite, nous utiliserons la fonction `lireLigne()`, qui simulera l'action d'un utilisateur saisissant son prénom grâce à son clavier.
-3/ Nous utiliserons une variable `$prenom` pour stocker la valeur obtenue à l'étape 2. Pour cela, on utilisera l'opérateur d'affectation `=` qui veut dire "prend la valeur de".
-4/ Nous afficherons le résultat grâce à la commande `echo`. Il est possible d'afficher plusieurs éléments avec le même `echo` en les séparant par une virgule `,`.
+1. Nous allons utiliser la commande `echo` pour lui demander son prénom. 
+2. Ensuite, nous utiliserons la fonction `lireLigne()`, qui simulera l'action d'un utilisateur saisissant son prénom grâce à son clavier.
+3. Nous utiliserons une variable `$prenom` pour stocker la valeur obtenue à l'étape 2. Pour cela, on utilisera l'opérateur d'affectation `=` qui veut dire "prend la valeur de".
+4. Nous afficherons le résultat grâce à la commande `echo`. Il est possible d'afficher plusieurs éléments avec le même `echo` en les séparant par une virgule `,`.
 
 Voici le programme que l'on obtient : 
 ```
