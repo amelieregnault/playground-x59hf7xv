@@ -1,6 +1,6 @@
 <?php 
 
-include "../utile.php";
+include "./utile.php";
 
 extract(execUserCode('./helloWorld.php'));
 
