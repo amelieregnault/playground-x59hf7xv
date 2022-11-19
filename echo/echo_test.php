@@ -21,8 +21,7 @@ if ($retval===0 && $nbLignes >= 3) {
     if (!str_contains($answer, '<?php')) {
         echo("TECHIO> message --channel 'La balise ouvrante PHP est absente ou mal écrite.'\r\n"); 
     } else if (!str_contains($answer, 'echo')) {
-        echo("TECHIO> message --channel '✏ Rappelles-toi, tu dois utiliser la 
-        commande echo pour afficher du texte.'\r\n");  
+        echo("TECHIO> message --channel '✏ Rappelles-toi, tu dois utiliser la commande echo pour afficher du texte.'\r\n");  
     } else if (!str_contains($answer, '\n')) {
         echo("TECHIO> message --channel 'Penses à utiliser le caractère \\n pour faire un saut de ligne'\r\n"); 
     } else if ($nbLignes < 3) {
