@@ -59,8 +59,21 @@ Ex : `$phrase = 'Les chaussettes de l'archiduchesse sont-elles sèches';`
 * Les booléens (bool) qui ne peuvent prendre que deux valeurs : true ou false (vrai ou faux).
 Ex : `$estContent = true;`
 
-On peut affecter des valeurs à une variable en :
+On peut affecter une valeur à une variable en :
 * indiquant directement la valeur comme ci-dessus,
 * utilisant une autre variable, la valeur sera alors le contenu de cette variable au moment de l'éxécution,
 * en faisant des calculs, comme nous le verrons au prochain chapitre,
 * en utilisant le résultat d'une fonction, comme nous avons fait avec la fonction `lireLigne()`.
+
+**Que se passe-t-il si j'affecte une valeur à une variable qui a déjà une valeur ?**
+
+La première valeur sera écrasée par la nouvelle. 
+
+```php runnable
+
+$age = 10;
+echo "J'ai ", $age, " ans.\n";
+$age = 11;
+echo "J'ai ", $age, " ans.\n";
+
+ ```
