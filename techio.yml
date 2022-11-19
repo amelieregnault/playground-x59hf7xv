@@ -28,3 +28,8 @@ projects:
     runner:
        name: php
        version: latest
+  variables:
+    root: /variables
+    runner:
+       name: php
+       version: latest

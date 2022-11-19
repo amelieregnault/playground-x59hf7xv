@@ -32,3 +32,8 @@ $a = $b;
 -[X] 1
 -[] 2
 -[] 3
+
+## Exercice 3 : Variables
+Complète le programme de sorte à afficher à l'utisateur le texte suivant : **Tu es PRENOM, tu as AGE et tu es METIER.**, en remplaçant PRENOM, AGE et METIER par les valeurs contenues dans les variables correspondantes.
+
+@[Ta solution]({"stubs": ["variables.php"], "project":"variables", "command": "/bin/bash run.sh"})
