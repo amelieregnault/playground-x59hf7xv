@@ -6,6 +6,8 @@ plan:
      statement: markdown/premiersProgrammes.md
    - title: Les variables
      statement: markdown/variables.md
+   - title: Premiers Programmes - Exercices
+     statement: markdown/premiersProgExercices.md
  - title: Arithmétiques et Logiques
    plan:
    - title: Les opérateurs arithmétiques
