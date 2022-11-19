@@ -46,3 +46,5 @@ Deux enfants ont chacun une carte Pokémon qu'ils souhaitent s'échanger.
 Compléte le programme qui simule l'échange des cartes. La carte du 
 premier enfant et celle du second enfant sont représentées respectivement par les variables `$carte1` et `$carte2`.
 A la fin du programme, la variable `$carte1` doit avoir la valeur initiale de la variable `$carte2`, et la variable `$carte2` doit avoir la valeur initiale de la variable `$carte1`.
+
+@[Ta solution]({"stubs": ["pokemon.php"], "project":"echangePokemon", "command": "/bin/bash run.sh"})
