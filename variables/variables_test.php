@@ -25,7 +25,7 @@ if (str_contains($answer, 'exec') || str_contains($answer, 'script')) {
 
 // *************** Vérification du programme *************
 
-$phrase ="Tu es " . $input['name'] . ", tu as " . $input['age'] . " et tu es "
+$phrase ="Tu es " . $input['name'] . ", tu as " . $input['age'] . " ans et tu es "
   . $input['metier'] . ".";
 if (count($output)===1 && $output[0] === $phrase)
 {
