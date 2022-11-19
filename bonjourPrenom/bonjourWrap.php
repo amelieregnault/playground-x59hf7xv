@@ -11,13 +11,11 @@ function getName(): string
 
 function lireLigne()
 {
-    global $name;
-    echo $name, "\n";
-
-    return $name;
+    global $data;
+    return $data;
 }
 
-$name = getName();
-global $name;
-echo $name, "\n";
+$data = getName();
+echo $data, "\n";
+global $data;
 include './bonjourPrenom.php';

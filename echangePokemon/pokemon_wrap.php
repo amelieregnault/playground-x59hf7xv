@@ -21,26 +21,27 @@ function getCarte2(): string
 function lireLigne()
 {
     global $compteur;
-    global $carte1;
-    global $carte2;
-    if ($compteur === 0){
-        $data = $carte1;
-    } else if ($compteur === 1){
-        $data = $carte2;
+    global $data1;
+    global $data2;
+
+    $tab = [$data1, $data2];
+    if ($compteur < 2) {
+        $data = $tab[$compteur];
+        $compteur++;
     } else {
         $data = "";
     }
-    echo $data, "\n";
-    $compteur++;
 
     return $data;
 }
 $compteur = 0;
 global $compteur;
-$carte1 = getCarte1();
-global $carte1;
-$carte2 = getCarte2();
-global $carte2;
+$data1 = getCarte1();
+global $data1;
+echo $data1, "\n";
+$data2 = getCarte2();
+global $data2;
+echo $data2, "\n";
 
 include './pokemon.php';
 

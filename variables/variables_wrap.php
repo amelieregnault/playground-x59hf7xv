@@ -22,34 +22,29 @@ function getMetier(): string
 function lireLigne()
 {
     global $compteur;
-    global $age;
-    global $name;
-    global $metier;
+    global $data1;
+    global $data2;
+    global $data3;
 
-    switch ($compteur){
-        case 0:
-            $data = $name;
-            break;
-        case 1:
-            $data = $age;
-            break;
-        case 2:
-            $data = $metier;
-            break;
-        default:
-            $data = "";
+    $tab = [$data1, $data2, $data3];
+    if ($compteur < 3) {
+        $data = $tab[$compteur];
+        $compteur++;
+    } else {
+        $data = "";
     }
-    echo $data, "\n";
-    $compteur++;
     return $data;
 }
 
 $compteur = 0;
 global $compteur;
-$name = getName();
-global $name;
-$age = getAge();
-global $age;
-$metier = getMetier();
-global $metier;
+$data1 = getName();
+global $data1;
+echo $data1, "\n";
+$data2 = getAge();
+global $data2;
+echo $data2, "\n";
+$data3 = getMetier();
+global $data3;
+echo $data3, "\n";
 include './variables.php';
