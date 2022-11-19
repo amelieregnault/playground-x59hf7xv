@@ -75,7 +75,6 @@ $age = 10;
 echo "J'ai ", $age, " ans.\n";
 $age = 11;
 echo "J'ai ", $age, " ans.\n";
-
  ```
 
  *NB : `\n` est la caractère pour faire un saut de ligne. Il doit être placé dans une chaîne de caractères entourée de guillemets `"`.* 
