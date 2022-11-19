@@ -40,7 +40,7 @@ Lorsque l'on donne une valeur à une variable, on dit qu'on "affecte une valeur"
 **Je peux utiliser n'importe quel nom de variable ?**
 
 Non, il faut respecter quelques règles. En PHP, tous les noms de variables doivent commencer par un dollar `$` puis être suivi d'une lettre ou d'un underscore `_`. 
-Ensuite, on peut utiliser des lettres, des nombres ou des underscores.
+Ensuite, on peut utiliser des lettres, des chiffres ou des underscores.
 
 *Attention : il ne faut pas mettre d'espace dans un nom de variable*. 
 
