@@ -11,9 +11,6 @@ if (str_contains($answer, 'exec') || str_contains($answer, 'script')) {
     exec('php '. $file, $output, $retval);
 }
 
-var_dump($retval);
-
-
 // ******** Vérification du code de l'utilisateur ********
 $nbLignes = count($output);
 if ($retval===0 && $nbLignes >= 3) {
