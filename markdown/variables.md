@@ -26,3 +26,24 @@ echo "Bonjour ", $prenom;
 Reproduis le programme ci-dessus.
 
 @[A toi d'essayer !]({"stubs": ["bonjourPrenom.php"], "project":"bonjourPrenom", "command": "/bin/bash run.sh"})
+
+
+## Explications supplémentaires
+
+**C'est quoi une variable ?**
+
+Une variable est un emplacement dans la mémoire de l'ordinateur (ou tout autre appareil pouvant éxécuter un programme) dans lequel on pourra y inscrire une valeur.
+Pour pouvoir ensuite accéder au contenu de cette variable, il faut lui donner un nom. 
+Dans notre exemple, on a voulu inscrire un prénom en mémoire et on a donc créé un variable, que l'on a, naturellement, appelé `$prenom`. 
+Lorsque l'on donne une valeur à une variable, on dit qu'on "affecte une valeur" et pour le faire, on utilise l'opérateur d'affectation `=`.
+
+**Je peux utiliser n'importe quel nom de variable ?**
+
+Non, il faut respecter quelques règles. En PHP, tous les noms de variables doivent commencer par un dollar `$` puis être suivi d'une lettre ou d'un underscore `_`. 
+Ensuite, on peut utiliser des lettres, des nombres ou des underscores.
+
+*Attention : il ne faut pas mettre d'espace dans un nom de variable*. 
+
+En PHP, par convention, on écrit les noms de variables en *camelCase*, c'est-à-dire en minuscules, sans accent, et on met en majuscule la première lettre des mots pour les rendre lisible. 
+Par exemple, si je veux créer une variable pour stocker l'âge du capitaine, je pourrais nommer cette variable `$ageCapitaine`.
+
