@@ -1,7 +1,13 @@
 # Premiers programmes - Exercices
-## Exercice 1 : 
+## Exercice 1 : Affichage
+
+Ecris un programme qui affichera à l'utilisateur au moins trois lignes de
+texte de ton choix.
+
+@[Ta solution]({"stubs": ["echo.php"], "project":"echo", "command": "/bin/bash run.sh"})
+
 ## Exercice 2 : Variables 
-Voici un programme, étudiez-le et répondez aux questions.
+Voici un programme, étudie-le et réponds aux questions.
 ```
 <?php
 $a = 1;
@@ -12,17 +18,17 @@ $c = $a;
 $a = $b;
 ```
 
-?[Quelle est la valeur de la variable `$a` à la fin du programme ?]
+?[Quelle est la valeur de la variable $a à la fin du programme ?]
 -[] 1
 -[] 2
 -[X] 3
 
-?[Quelle est la valeur de la variable `$b` à la fin du programme ?]
+?[Quelle est la valeur de la variable $b à la fin du programme ?]
 -[] 1
 -[] 2
 -[X] 3
 
-?[Quelle est la valeur de la variable `$c` à la fin du programme ?]
+?[Quelle est la valeur de la variable $c à la fin du programme ?]
 -[X] 1
 -[] 2
 -[] 3

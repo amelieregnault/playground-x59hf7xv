@@ -23,3 +23,8 @@ projects:
     runner:
        name: php
        version: latest
+  echo:
+    root: /echo
+    runner:
+       name: php
+       version: latest
