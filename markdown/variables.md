@@ -47,3 +47,20 @@ Ensuite, on peut utiliser des lettres, des nombres ou des underscores.
 En PHP, par convention, on écrit les noms de variables en *camelCase*, c'est-à-dire en minuscules, sans accent, et on met en majuscule la première lettre des mots pour les rendre lisible. 
 Par exemple, si je veux créer une variable pour stocker l'âge du capitaine, je pourrais nommer cette variable `$ageCapitaine`.
 
+**Je peux affecter n'importe quelle valeur à une variable ?**
+
+Il existe plusieurs types de valeurs en PHP. Les principales sont : 
+* Les entiers (int) qui correspondent aux nombres entiers positifs ou négatifs
+Ex : `$num = -5;`
+* Les flottants (float) qui permettent de représenter les nombres à virgule
+Ex : `$taille = 1.75;`
+* Les chaînes de caractères (string) qui permettent de stocker du texte : 
+Ex : `$phrase = 'Les chaussettes de l'archiduchesse sont-elles sèches';`
+* Les booléens (bool) qui ne peuvent prendre que deux valeurs : true ou false (vrai ou faux).
+Ex : `$estContent = true;`
+
+On peut affecter des valeurs à une variable en :
+* indiquant directement la valeur comme ci-dessus,
+* utilisant une autre variable, la valeur sera alors le contenu de cette variable au moment de l'éxécution,
+* en faisant des calculs, comme nous le verrons au prochain chapitre,
+* en utilisant le résultat d'une fonction, comme nous avons fait avec la fonction `lireLigne()`.
