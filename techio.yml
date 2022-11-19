@@ -33,3 +33,8 @@ projects:
     runner:
        name: php
        version: latest
+  echangePokemon:
+    root: /echangePokemon
+    runner:
+       name: php
+       version: latest
