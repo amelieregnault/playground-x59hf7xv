@@ -42,8 +42,3 @@ if (count($output) >= 2){
     echo("TECHIO> message --channel 'Obtenu -> carte 1 : " . $output[0] . 
         " || carte 2 : " . $output[1] ."'\r\n");
 }
-
-// ************* Exécution du programme *************
-foreach ($output as $line){
-    echo $line . "\n";
-}
