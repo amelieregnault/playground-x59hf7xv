@@ -1,6 +1,6 @@
 # Les structures de contrôle conditionnelles
 
-Pour l'instant nos programmes suivent une "ligne droite", leur exécution commence à la première ligne, puis continue ligne après ligne dans l'ordre. Les structures de contrôles sont là pour indiquer au programme dans quel ordre exécuter les instructions. La structure de contrôle que nous avons utilisées 
+Pour l'instant nos programmes suivent une "ligne droite", leur exécution commence à la première ligne, puis continue ligne après ligne dans l'ordre. Les structures de contrôles sont là pour indiquer au programme dans quel ordre exécuter les instructions. La structure de contrôle que nous avons utilisée
 jusqu'à présent est la structure de contrôle séquentielle.
 
 Nous allons découvrir deux autres types de structures de contrôles
@@ -47,7 +47,7 @@ le code suivant :
 ```php runnable
 <?php
 $jour = 'dimanche';
-if ($jour === 'samedi' || jour === 'dimanche') {
+if ($jour === 'samedi' || $jour === 'dimanche') {
     echo 'Fermé';
 } else {
     echo 'Ouvert';
@@ -75,7 +75,7 @@ Dans notre exemple, au début, la variable `$jour` vaut "dimanche", donc l'expre
 
 Prenons l'exemple d'un programme qui affiche "Bonjour" dans la langue indiquée par l'utilisateur (ici, on utilisera une variable). Nous pourrions avoir le programme suivant : 
 
-```
+```php runnable
 $langue = 'allemand';
 if ($langue === 'espagnol') {
     echo 'Buenas dias';
