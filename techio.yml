@@ -52,7 +52,7 @@ projects:
     runner:
        name: php
        version: latest
-  calculSomme:
+  calculTVA:
     root: /TVA
     runner:
        name: php
