@@ -68,3 +68,8 @@ projects:
     runner:
        name: php
        version: latest
+  calculatriceSimple:
+    root: /calculatriceSimple
+    runner:
+       name: php
+       version: latest

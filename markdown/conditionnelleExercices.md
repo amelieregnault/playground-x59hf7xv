@@ -28,10 +28,12 @@ Ecrire un programme qui affiche le maximum entre deux nombres `n1` et `n2`.
 
 @[Ta solution]({"stubs": ["maximum.php"], "project":"maximum", "command": "/bin/bash run.sh"})
 
-## Exercice 3 : 
+## Exercice 3 : calculatrice
 
 Ecrire un programme qui effectue un calcul entre deux nombres `n1` et `n2` à l'aide
-d'un opérateur `op` qui peut être celui de l'addition, de la soustraction ou de la multiplication.
+d'un opérateur `op` qui peut être prendre une des trois valeurs : 'addition', 'soustraction' ou 'multiplication'.
+
+@[Ta solution]({"stubs": ["calculatrice.php"], "project":"calculatriceSimple", "command": "/bin/bash run.sh"})
 
 ## Exercice 4 : Années Bissextiles
 
