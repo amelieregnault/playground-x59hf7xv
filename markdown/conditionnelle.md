@@ -109,7 +109,7 @@ Les conditions sont analysées dans l'ordre. Si l'expression `cond 1` vaut true,
 
 Dans tous les cas, un seul des blocs peut être exécuté : celui correspond à la première condition évaluée à true.
 
-Dans le code suivant, plusieurs conditions peuvent être vraies en même temps. Changer les valeurs de la variable `$n` pour voir ce qu'il se passe dans les différents cas de figures.
+Dans le code suivant, plusieurs conditions peuvent être vraies en même temps. Tu peux hanger les valeurs de la variable `$n` pour voir ce qu'il se passe dans les différents cas de figures.
 
 ``` php runnable
 <?php
