@@ -3,15 +3,19 @@ plan:
  - title: Premiers Programmes 
    plan:
    - title: Hello World
-     statement: markdown/premiersProgrammes.md
+      statement: markdown/premiersProgrammes.md
    - title: Les variables
-     statement: markdown/variables.md
+      statement: markdown/variables.md
    - title: Premiers Programmes - Exercices
-     statement: markdown/premiersProgExercices.md
+      statement: markdown/premiersProgExercices.md
  - title: Arithmétiques et Logiques
    plan:
    - title: Les opérateurs arithmétiques
-     statement: markdown/arithmetiques.md
+      statement: markdown/arithmetiques.md
+ - title: Arithmétique et Logique
+   plan:
+     - title: Arithmétique et Logique - Exercices
+      statement : markdown/arithmetiqueExercices.md
 projects:
   helloWorld:
     root: /helloWorld
@@ -21,20 +25,25 @@ projects:
   bonjourPrenom:
     root: /bonjourPrenom
     runner:
-       name: php
-       version: latest
+      name: php
+      version: latest
   echo:
     root: /echo
     runner:
-       name: php
-       version: latest
+      name: php
+      version: latest
   variables:
     root: /variables
     runner:
-       name: php
-       version: latest
+      name: php
+      version: latest
   echangePokemon:
     root: /echangePokemon
     runner:
-       name: php
-       version: latest
+      name: php
+      version: latest
+  debogageSimple:
+    root: /debogageSimple
+    runner:
+      name: php
+      version: latest
