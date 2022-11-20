@@ -8,13 +8,11 @@ plan:
       statement: markdown/variables.md
    - title: Premiers Programmes - Exercices
       statement: markdown/premiersProgExercices.md
- - title: Arithmétiques et Logiques
+ - title: Arithmétique et Logique
    plan:
    - title: Les opérateurs arithmétiques
       statement: markdown/arithmetiques.md
- - title: Arithmétique et Logique
-   plan:
-     - title: Arithmétique et Logique - Exercices
+   - title: Arithmétique et Logique - Exercices
       statement : markdown/arithmetiqueExercices.md
 projects:
   helloWorld:
