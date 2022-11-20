@@ -29,8 +29,8 @@ if ($retval===0 && count($output) === 1 && $output[0]==='Hello World !') {
     if (!str_contains($answer, 'echo')) {
         echo("TECHIO> message --channel 'Tips' As-tu écrit correctement la commande echo ?\r\n");
     }
-    if (!str_contains($answer, '"Hello World !"') && !str_contains($answer, "\'Hello World !\'")) {
-        echo("TECHIO> message --channel 'Tips' Vérifie que ta chaîne de caractère 'Hello World !' est correctement écrit. \r\n");
+    if (!str_contains($answer, '"Hello World !"') && !str_contains($answer, "'Hello World !'")) {
+        echo("TECHIO> message --channel 'Tips' Vérifie que ta chaîne de caractère \'Hello World !\' est correctement écrit. \r\n");
     }
 }
 
