@@ -9,7 +9,7 @@ plan:
    - title: Premiers Programmes - Exercices
      statement: markdown/premiersProgExercices.md
  -title : Arithmétique et Logique
-   plan:
+  plan:
      -title: Les opérateurs arithmétiques
       statement: markdown/arithmetiques.md
 projects:
