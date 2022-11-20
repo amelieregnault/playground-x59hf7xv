@@ -69,7 +69,7 @@ if (cond) {
 
 où `cond` est une expression booléenne, `code 1` correspond à une ou plusieurs lignes de code qui s'exécuteront si `cond` a pour valeur true et `code 2` correspond à une ou plusieurs lignes de code qui s'exécuteront si `cond` a pour valeur false.
 
-Dans notre exemple, au début, la variable `$jour` vaut "dimanche", donc l'expression `$jour === 'samedi' || jour === 'dimanche'` a pour valeur true. Le code du premier bloc est donc exécuté et "Fermé" est affiché. Si la variable `$jour` a maintenant pour valeur "mardi", alors l'expression `$jour === 'samedi' || jour === 'dimanche'` vaut false, et c'est le deuxième bloc de code qui est exécuté et "Ouvert" est affiché.
+Dans notre exemple, au début, la variable `$jour` vaut "dimanche", donc l'expression `$jour === 'samedi' || $jour === 'dimanche'` a pour valeur true. Le code du premier bloc est donc exécuté et "Fermé" est affiché. Si la variable `$jour` a maintenant pour valeur "mardi", alors l'expression `$jour === 'samedi' || $jour === 'dimanche'` vaut false, et c'est le deuxième bloc de code qui est exécuté et "Ouvert" est affiché.
 
 ### Structure IF à trois blocs ou plus
 
