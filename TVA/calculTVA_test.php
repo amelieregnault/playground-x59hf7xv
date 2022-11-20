@@ -19,7 +19,7 @@ if (str_contains($answer, 'exec') || str_contains($answer, 'script')) {
 
 // *************** Vérification du programme *************$tva
 $calcul = $input * 1.20;
-if (count($output)===1 && $output[0] === $calcul)
+if (count($output)===1 && $output[0] == $calcul)
 {
     echo("TECHIO> success true \r\n");
     echo("TECHIO> message --channel '✨ Bien joué !'\r\n");
@@ -28,10 +28,7 @@ if (count($output)===1 && $output[0] === $calcul)
 }
 
 echo("TECHIO> message --channel 'Données entrantes' Prix HT : " . $input . "\r\n");
-echo("TECHIO> message --channel 'Résultat attendu ' Prix TTC : " . $calcul . "\r\n");
-if (!empty($output[0]) && !str_contains($output[0], 'Warning') && !str_contains($output[0], 'error')){
-    echo("TECHIO> message --channel 'Résultat obtenu'" . $output[0] ."\r\n");
-}
+echo("TECHIO> message --channel 'Résultat attendu'" . $calcul . "\r\n");
 
 
 // ************* Exécution du programme *************
