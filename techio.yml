@@ -4,6 +4,8 @@ plan:
    plan:
    - title: Hello World
      statement: markdown/premiersProgrammes.md
+   - title: Les variables
+     statement: markdown/variables.md
 projects:
   helloWorld:
     root: /helloWorld
