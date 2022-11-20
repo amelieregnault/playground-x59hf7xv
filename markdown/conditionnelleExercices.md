@@ -16,7 +16,7 @@ if ((note1 + note2) / 2 >= 10) {
 
 ```
 
-?[Qu'affiche le programme]
+?[Qu'affiche le programme ?]
 - [] Vous avez la moyenne. Bravo !
 - [X] Vous n'avez pas la moyenne. Dommage !
 - [] Vous avez la moyenne. Bravo ! Vous n'avez pas la moyenne. Dommage !
@@ -28,7 +28,7 @@ Ecrire un programme qui affiche le maximum entre deux nombres `n1` et `n2`.
 
 @[Ta solution]({"stubs": ["maximum.php"], "project":"maximum", "command": "/bin/bash run.sh"})
 
-## Exercice 3 : calculatrice
+## Exercice 3 : Calculatrice
 
 Ecrire un programme qui effectue un calcul entre deux nombres `n1` et `n2` à l'aide
 d'un opérateur `op` qui peut être prendre une des trois valeurs : 'addition', 'soustraction' ou 'multiplication'.
