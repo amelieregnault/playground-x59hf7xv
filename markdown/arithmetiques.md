@@ -124,6 +124,7 @@ Bien sûr que non, on peut les utiliser de différentes façons. Lorsqu'on utili
 - la stocker dans une variables
 - l'utiliser dans un calcul
 - l'afficher
+
 On verra, plus tard, qu'on peut également
 - l'utiliser comme condition dans les structures de contrôles (surtout les expressions booléennes)
 - la stocker dans un tableau
