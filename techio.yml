@@ -5,13 +5,7 @@ plan:
    - title: Hello World
       statement: markdown/premiersProgrammes.md
    - title: Les variables
-      statement: markdown/variables.md
-   - title: Premiers Programmes - Exercices
-     statement: markdown/premiersProgExercices.md
-  -title : Arithmétique et Logique
-   plan:
-     -title: Les opérateurs arithmétiques
-      statement: markdown/arithmetiques.md  
+      statement: markdown/variables.md  
 projects:
   helloWorld:
     root: /helloWorld
