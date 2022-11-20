@@ -16,7 +16,7 @@ Corrige le programme afin qu'il puisse fonctionner correctement.
 
 Ecris un programme qui calcule la somme des n premiers entiers naturels grâce à la formule n(n + 1)/2.
 
-@[Ta solution]({"stubs": ["calcul.php"], "project":"calculSomme", "command": "/bin/bash run.sh"})
+@[Ta solution]({"stubs": ["calculSomme.php"], "project":"calculSomme", "command": "/bin/bash run.sh"})
 
 ## Exercice 3 : Calcul TVA
 
