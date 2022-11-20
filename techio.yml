@@ -3,7 +3,7 @@ plan:
  - title: Premiers Programmes 
    plan:
    - title: Hello World
-      statement: markdown/premiersProgrammes.md
+    statement: markdown/premiersProgrammes.md
 projects:
   helloWorld:
     root: /helloWorld
