@@ -12,13 +12,13 @@ Corrige le programme afin qu'il puisse fonctionner correctement.
 
 @[Ta solution]({"stubs": ["debogage.php"], "project":"debogageSimple", "command": "/bin/bash run.sh"})
 
-## Exercice 2 : Calcul
+## Exercice 2 : Calcul Somme
 
 Ecris un programme qui calcule la somme des n premiers entiers naturels grâce à la formule n(n + 1)/2.
 
 @[Ta solution]({"stubs": ["calcul.php"], "project":"calculSomme", "command": "/bin/bash run.sh"})
 
-## Exercice 3 : 
+## Exercice 3 : Calcul TVA
 
 Ecris un programme qui calcule le prix TTC d’un article dont le prix est donné hors taxes (HT) et pour lequel une TVA de 20% s’applique.
 
