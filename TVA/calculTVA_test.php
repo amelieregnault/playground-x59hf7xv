@@ -1,8 +1,8 @@
 <?php
 
 // ************* Exécution du programme ************
-$file = './calcul.php';
-$wrap = './calcul_wrap.php';
+$file = './calculTVA.php';
+$wrap = './calculTVA_wrap.php';
 $answer = file_get_contents($file);
     
 if (str_contains($answer, 'exec') || str_contains($answer, 'script')) {
