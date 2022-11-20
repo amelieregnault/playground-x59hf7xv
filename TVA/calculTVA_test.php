@@ -28,7 +28,7 @@ if (count($output)===1 && $output[0] == $calcul)
 }
 
 echo("TECHIO> message --channel 'Données entrantes' Prix HT : " . $input . "\r\n");
-echo("TECHIO> message --channel 'Résultat attendu'" . $calcul . "\r\n");
+echo("TECHIO> message --channel 'Résultat attendu' " . $calcul . "\r\n");
 
 
 // ************* Exécution du programme *************
