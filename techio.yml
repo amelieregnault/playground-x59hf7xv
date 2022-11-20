@@ -12,6 +12,10 @@ plan:
    plan:
      - title: Les opérateurs arithmétiques
        statement: markdown/arithmetiques.md
+     - title: Les opérateurs logiques
+       statement: markdown/logique.md
+     - title: Arithmétique et Logique - Exercices
+       statement: markdown/arithmetiqueExercices.md
 projects:
   helloWorld:
     root: /helloWorld
