@@ -19,9 +19,9 @@ if ($retval===0 && count($output) === 1 && $output[0]==='Hello World !') {
     echo("TECHIO> message --channel 'Félicitations ! 🎉 ' Tu viens de créer ton premier programme PHP.\r\n");
 } else {
     echo("TECHIO> success false  \r\n");
-    echo("TECHIO> message --channel 'Tips ! 🎉 '  Vérifie que ton code est le même que dans l’exemple ci-dessus.\n toto \r\n");
+    echo("TECHIO> message --channel 'Tips'  Vérifie que ton code est le même que dans l’exemple ci-dessus. toto \r\n");
     if (!str_contains($answer, '<?php')) {
-        echo(" 'Vérifie que tu as bien écrit la balise ouvrante PHP.'\r\n");
+        echo("TECHIO> message --channel 'Tips'  Vérifie que tu as bien écrit la balise ouvrante PHP.\r\n");
     }
     if (!str_contains($answer, ';')) {
         echo("TECHIO> message --channel 'N’aurais-tu pas oublié le point virgule à la fin de l’instruction.'\r\n");
