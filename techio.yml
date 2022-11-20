@@ -20,10 +20,6 @@ plan:
        statement: markdown/conditionnelle.md
      - title: Structure de contrôle conditionnelle - Exercices
        statement: markdown/conditionnelleExercices.md
-     - title: Structure de contrôle itérative
-       statement: markdown/boucles.md
-     - title: Structure de contrôle itératives - Exercices
-       statement: markdown/bouclesExercices.md
 projects:
   helloWorld:
     root: /helloWorld
