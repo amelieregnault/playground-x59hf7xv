@@ -23,6 +23,8 @@ function lireLigne()
     return $data;
 }
 
+$compteur=0;
+global $compteur;
 $data1 = getNumber();
 echo $data1, "\n";
 global $data1;
