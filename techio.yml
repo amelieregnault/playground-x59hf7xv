@@ -11,7 +11,7 @@ plan:
  - title : Arithmétique et Logique
    plan:
      - title: Les opérateurs arithmétiques
-      statement: markdown/arithmetiques.md
+       statement: markdown/arithmetiques.md
 projects:
   helloWorld:
     root: /helloWorld
