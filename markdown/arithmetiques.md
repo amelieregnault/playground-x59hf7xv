@@ -16,7 +16,7 @@ Essaie de trouver ce qui sera affiché par ce programme, puis vérifie tes calcu
 echo '2 + 3 = ', 2 + 3, "\n";
 echo '4 + 5 * 2 = ', 4 + 5 * 2, "\n";
 echo '15 % 4 = ', 15 % 4, "\n";
-echo '3 * 4 / 3 – 2 + 1 = ', 3 * 4 / 3, "\n";
+echo '3 * 4 / 3 - 2 + 1 = ', 3 * 4 / 3 - 2 + 1, "\n";
 echo '3 * 2 ** 5 = ', 3 * 2 ** 5, "\n";
 ```
 
