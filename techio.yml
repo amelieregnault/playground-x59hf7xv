@@ -42,3 +42,8 @@ projects:
     runner:
        name: php
        version: latest
+  debogageSimple:
+    root: /debogageSimple
+    runner:
+       name: php
+       version: latest
