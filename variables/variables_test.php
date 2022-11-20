@@ -33,7 +33,7 @@ if (count($output)===1 && $output[0] === $phrase)
     echo("TECHIO> message --channel '✨ Bien joué !'\r\n");
 } else {
     echo("TECHIO> success false  \r\n");
-    echo("TECHIO> message --channel 'Affichage attendu : " . $phrase . "'\r\n");
+    echo("TECHIO> message --channel 'Affichage attendu' " . $phrase . "\r\n");
 }
 
 // ************* Exécution du programme *************

@@ -35,12 +35,11 @@ if (count($output)===1 && $output[0] === $phrase){
     echo("TECHIO> success false  \r\n");
 }
 
-echo("TECHIO> message --channel 'Valeurs récupérées -> Length 1 : " . $input['length1'] . 
-    " || Width 1 : " . $input['width1'] . " || Length 2 : " . $input['length2'] . 
-    " || Width 2 : " . $input['width2'] . "'\r\n");
-echo("TECHIO> message --channel 'Attendu -> " . $phrase . "'\r\n");
+echo("TECHIO> message --channel 'Données entrantes' Rectangle 1 -> longueur : " . $input['length1'] . " ; largeur : " . $input['width1'] . "'\r\n");
+echo("TECHIO> message --channel 'Données entrantes' Rectangle 2 -> longueur : " . $input['length2'] . " ; largeur : " . $input['width2'] . "'\r\n");
+echo("TECHIO> message --channel 'Résulat attendu' " . $phrase . "'\r\n");
 if (!empty($output[0]) && !str_contains($output[0], 'Warning') && !str_contains($output[0], 'error')){
-    echo("TECHIO> message --channel 'Obtenu -> " . $output[0] ."'\r\n");
+    echo("TECHIO> message --channel 'Résultat obtenu'" . $output[0] ."'\r\n");
 }
 
 // ************** Exécution du programme **************

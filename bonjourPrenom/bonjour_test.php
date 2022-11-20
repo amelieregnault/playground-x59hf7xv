@@ -30,7 +30,7 @@ if (count($output)===2 &&
     echo("TECHIO> message --channel '✨ Bien joué !'\r\n");
 } else {
     echo("TECHIO> success false  \r\n");
-    echo("TECHIO> message --channel 'Vérifie que ton code est le même que dans l’exemple ci-dessus.'\r\n");
+    echo("TECHIO> message --channel 'Tips' Vérifie que ton code est le même que dans l'exemple ci-dessus.\r\n");
 }
 
 // ************* Exécution du programme *************

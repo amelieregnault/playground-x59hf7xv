@@ -29,10 +29,10 @@ if (count($output)===1 && $output[0] === $calcul)
     echo("TECHIO> success false  \r\n");
 }
 
-echo("TECHIO> message --channel 'Valeurs récupérées -> $n = " . $input . "'\r\n");
-echo("TECHIO> message --channel 'Attendu -> " . $calcul . "'\r\n");
+echo("TECHIO> message --channel 'Donnée entrantes' $n = " . $input . "'\r\n");
+echo("TECHIO> message --channel 'Résultat attendu' " . $calcul . "'\r\n");
 if (!empty($output[0]) && !str_contains($output[0], 'Warning') && !str_contains($output[0], 'error')){
-    echo("TECHIO> message --channel 'Obtenu -> " . $output[0] ."'\r\n");
+    echo("TECHIO> message --channel 'Résultat obtenu' " . $output[0] ."\r\n");
 }
 
 

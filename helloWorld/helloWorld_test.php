@@ -27,10 +27,10 @@ if ($retval===0 && count($output) === 1 && $output[0]==='Hello World !') {
         echo("TECHIO> message --channel 'Tips' N'aurais-tu pas oublié le point virgule à la fin de l'instruction.\r\n");
     }
     if (!str_contains($answer, 'echo')) {
-        echo("TECHIO> message --channel 'As-tu écrit correctement la commande echo ?'\r\n");
+        echo("TECHIO> message --channel 'Tips' As-tu écrit correctement la commande echo ?\r\n");
     }
     if (!str_contains($answer, '"Hello World !"') && !str_contains($answer, "\'Hello World !\'")) {
-        echo("TECHIO> message --channel 'Vérifie que ta chaîne de caractère \"Hello World !\" est correctement écrit.'\r\n");
+        echo("TECHIO> message --channel 'Tips' Vérifie que ta chaîne de caractère 'Hello World !' est correctement écrit. \r\n");
     }
 }
 

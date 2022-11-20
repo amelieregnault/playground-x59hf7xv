@@ -34,11 +34,11 @@ if (count($output)===2 &&
     echo("TECHIO> success false  \r\n");
 }
 
-echo("TECHIO> message --channel 'Initial -> carte 1 : " . $input['carte1'] . 
-    " || carte 2 : " . $input['carte2'] ."'\r\n");
-echo("TECHIO> message --channel 'Attendu -> carte 1 : " . $input['carte2'] . 
-    " || carte 2 : " . $input['carte1'] ."'\r\n");
+echo("TECHIO> message --channel 'Données initiales' carte 1 : " . $input['carte1'] . "\r\n");
+echo("TECHIO> message --channel 'Données initiales' carte 2 : " . $input['carte2'] . "'\r\n");
+echo("TECHIO> message --channel 'Résultat attendu' carte 1 : " . $input['carte2'] . "\r\n");
+echo("TECHIO> message --channel 'Résultat attendu' carte 2 : " . $input['carte1'] . "\r\n"); 
 if (count($output) >= 2){
-    echo("TECHIO> message --channel 'Obtenu -> carte 1 : " . $output[0] . 
-        " || carte 2 : " . $output[1] ."'\r\n");
+    echo("TECHIO> message --channel 'Résultat obtenu' carte 1 : " . $carte1 . "\r\n");
+    echo("TECHIO> message --channel 'Résultat obtenu' carte 2 : " . $carte2 . "\r\n"); 
 }
