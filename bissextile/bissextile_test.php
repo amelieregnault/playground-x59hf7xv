@@ -44,7 +44,7 @@ if (count($output)===1 && $output[0] === $phrase)
 
     if ($correct) {
         
-        if (substr_count($answer, 'if') > 1 || substr($answer, '?') > 1){
+        if (substr_count($answer, 'if') > 1 || substr_count($answer, '?') > 1){
             echo("TECHIO> success false \r\n");
             echo("TECHIO> message --channel 'Tu peux faire mieux' Regarde le nombre de phrases vraiment différentes que tu dois afficher. \r\n");
             echo("TECHIO> message --channel 'Tu peux faire mieux' N'hésite pas à combiner plusieurs conditions en même temps à l'aide des opérateurs logiques. \r\n");
