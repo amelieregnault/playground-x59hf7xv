@@ -47,3 +47,13 @@ projects:
     runner:
        name: php
        version: latest
+  calculSomme:
+    root: /calculSomme
+    runner:
+       name: php
+       version: latest
+  calculSomme:
+    root: /calculTVA
+    runner:
+       name: php
+       version: latest
