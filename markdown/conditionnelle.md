@@ -76,6 +76,7 @@ Dans notre exemple, au début, la variable `$jour` vaut "dimanche", donc l'expre
 Prenons l'exemple d'un programme qui affiche "Bonjour" dans la langue indiquée par l'utilisateur (ici, on utilisera une variable). Nous pourrions avoir le programme suivant : 
 
 ```php runnable
+<?php
 $langue = 'allemand';
 if ($langue === 'espagnol') {
     echo 'Buenas dias';
