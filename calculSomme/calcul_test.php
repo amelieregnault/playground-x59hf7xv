@@ -20,7 +20,7 @@ if (str_contains($answer, 'exec') || str_contains($answer, 'script')) {
 // *************** Vérification du programme *************
 
 $calcul = $input * ($input + 1) / 2;
-if (count($output)===1 && $output[0] === $calcul)
+if (count($output)===1 && $output[0] == $calcul)
 {
     echo("TECHIO> success true \r\n");
     echo("TECHIO> message --channel '✨ Bien joué !'\r\n");
@@ -30,9 +30,6 @@ if (count($output)===1 && $output[0] === $calcul)
 
 echo("TECHIO> message --channel 'Donnée entrantes' n = " . $input . "\r\n");
 echo("TECHIO> message --channel 'Résultat attendu' " . $calcul . "\r\n");
-if (!empty($output[0]) && !str_contains($output[0], 'Warning') && !str_contains($output[0], 'error')){
-    echo("TECHIO> message --channel 'Résultat obtenu' " . $output[0] ."\r\n");
-}
 
 
 // ************* Exécution du programme *************
