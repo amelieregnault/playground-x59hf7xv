@@ -16,6 +16,12 @@ plan:
        statement: markdown/logique.md
      - title: Arithmétique et Logique - Exercices
        statement: markdown/arithmetiqueExercices.md
+ - title : Structures de contrôles
+   plan:
+     - title: Structure de contrôle conditionnelle
+       statement: markdown/conditionnelle.md
+     - title: Structure de contrôle conditionnelle - Exercices
+       statement: markdown/logique.md
 projects:
   helloWorld:
     root: /helloWorld
@@ -54,6 +60,11 @@ projects:
        version: latest
   calculTVA:
     root: /TVA
+    runner:
+       name: php
+       version: latest
+  maximum:
+    root: /maximum
     runner:
        name: php
        version: latest
