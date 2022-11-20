@@ -79,7 +79,7 @@ De la même manière que pour les autres opérateurs, il existe des priorité de
 echo '5 >= 6 vaut ', 5 >= 6, "\n";
 echo "'1' == 1 vaut ", '1' == 1	, "\n";
 echo "'1' === 1 vaut ", '1' === 1, "\n";
-echo '5 != 6 + 4 – 9 vaut ', 5 != 6 + 4 – 9	, "\n";
+echo '5 != 6 + 4 - 9 vaut ', 5 != 6 + 4 - 9	, "\n";
 echo '5 > 6 === 5 > 9 vaut ', 5 > 6 === 5 > 9, "\n";
 echo 'true || false && (2 > 1) vaut ', true || false && (2 > 1), "\n";
 echo '(2 === 4 || (4 < 1)) && (19 >= 17 + 2) vaut ', (2 === 4 || (4 < 1)) && (19 >= 17 + 2), "\n";
