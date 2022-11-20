@@ -44,7 +44,7 @@ renvoie donc toujours true ou false comme valeur.
 
 L'opérateur ET `&&` renverra la valeur true si ses deux opérandes ont pour valeur true. On résume cela dans une table de vérité.
 
-| && || true | false |
-|-------||-------|-------|
-| true || true | false |
-| false || false | false |
+| && | true | false |
+|-------|-------|-------|
+| true | true | false |
+| false | false | false |
