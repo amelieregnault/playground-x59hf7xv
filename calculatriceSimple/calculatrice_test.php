@@ -46,7 +46,7 @@ if (count($output)===1 && $output[0] == $result)
 
 echo("TECHIO> message --channel 'Donnée entrantes' n1 = " . $input['n1'] . "\r\n");
 echo("TECHIO> message --channel 'Donnée entrantes' n2 = " . $input['n2'] . "\r\n");
-echo("TECHIO> message --channel 'Donnée entrantes' op = '" . $input['op'] . "'\r\n");
+echo("TECHIO> message --channel 'Donnée entrantes' op = \'" . $input['op'] . "\'\r\n");
 echo("TECHIO> message --channel 'Résultat attendu' " . $result . "\r\n");
 
 

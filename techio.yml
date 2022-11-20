@@ -73,3 +73,8 @@ projects:
     runner:
        name: php
        version: latest
+  bissextile:
+    root: /bissextile
+    runner:
+       name: php
+       version: latest

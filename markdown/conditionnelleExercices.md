@@ -42,4 +42,4 @@ Voici un programme qui détermine si une année est bissextile.
 
 Seras-tu capable de le simplifier ?
 
-
+@[Ta solution]({"stubs": ["bissextile.php"], "project":"bissextile", "command": "/bin/bash run.sh"})
