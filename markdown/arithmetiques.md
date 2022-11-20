@@ -78,12 +78,18 @@ De la même manière que pour les autres opérateurs, il existe des priorité de
 <?php
 echo '5 >= 6 : '; 
 var_dump(5 >= 6);
-echo "'1' == 1 vaut ", '1' == 1	, "\n";
-echo "'1' === 1 vaut ", '1' === 1, "\n";
-echo '5 != 6 + 4 - 9 vaut ', 5 != 6 + 4 - 9	, "\n";
-echo '5 > 6 === 5 > 9 vaut ', 5 > 6 === 5 > 9, "\n";
-echo 'true || false && (2 > 1) vaut ', true || false && (2 > 1), "\n";
-echo '(2 === 4 || (4 < 1)) && (19 >= 17 + 2) vaut ', (2 === 4 || (4 < 1)) && (19 >= 17 + 2), "\n";
+echo "'1' == 1 : ";
+var_dump('1' == 1);
+echo "'1' === 1 : ";
+var_dump('1' === 1);
+echo '5 != 6 + 4 - 9 : ';
+var_dump(5 != 6 + 4 - 9);
+echo '5 > 6 === 5 > 9 : ';
+var_dump(5 > 6 === 5 > 9);
+echo 'true || false && (2 > 1) : ';
+var_dump(true || false && (2 > 1));
+echo '(2 === 4 || (4 < 1)) && (19 >= 17 + 2) : ';
+var_dump ((2 === 4 || (4 < 1)) && (19 >= 17 + 2));
 
 echo '==============\n';
 
@@ -91,8 +97,10 @@ $x = 3;
 $y = 6;
 $z = 5;
 
-echo '$z != 0 && (2 * ($x - $y) < 3) vaut ', $z != 0 && (2 * ($x - $y) < 3), "\n";
-echo '((($x * $y > 0) && !($y * $z > 0)) || ($x >= 0)) vaut ', ((($x * $y > 0) && !($y * $z > 0)) || ($x >= 0)), "\n";
+echo '$z != 0 && (2 * ($x - $y) < 3) : ';
+var_dump($z != 0 && (2 * ($x - $y) < 3));
+echo '((($x * $y > 0) && !($y * $z > 0)) || ($x >= 0)) : ';
+var_dump(((($x * $y > 0) && !($y * $z > 0)) || ($x >= 0)));
 
 ```
 
@@ -120,3 +128,11 @@ On verra, plus tard, qu'on peut également
 - l'utiliser comme condition dans les structures de contrôles (surtout les expressions booléennes)
 - la stocker dans un tableau
 - la passer en paramètre d'une fonction
+
+**C'est quoi `var_dump` ?**
+
+La fonction `var_dump` est une fonction très pratique qui permet de connaître le type et la valeur d'une expression (et donc aussi d'une variable) au cours
+de l'exécution du programme. Elle sert lors du développement et en particulier lors du débogage, c'est-à-dire lorsqu'on retire les erreurs qu'on a introduit
+dans le code sans faire exprès.
+
+*Attention, il ne faut pas laisser cette fonction dans un programme finalisé. Elle ne sert que pour la phase de développement*.
