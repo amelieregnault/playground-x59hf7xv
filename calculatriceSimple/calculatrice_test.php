@@ -49,8 +49,6 @@ if (count($output)===1 && $output[0] == $result)
     exec('php '. $multitest, $out);
     $taille = count($out);
 
-    print_r($out);
-
     for ($i = 0; $i < $taille; $i = $i + 4){
         $n1 = $out[$i];
         $n2 = $out[$i + 1];
