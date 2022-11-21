@@ -87,7 +87,7 @@ for ($compteur = 0; $compteur < nombre ; $compteur = $compteur + 1){
 }
 ```
 
-NB : A la place de `compteur = compteur + 1`, on peut utiliser `$compteur++` qui est équivalent.
+NB : A la place de `$compteur = $compteur + 1`, on peut utiliser `$compteur++` qui est équivalent.
 
 De  manière générale, la syntaxe de la structure de contrôle for est : 
 
