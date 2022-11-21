@@ -30,8 +30,9 @@ while ($compteur < 5) {
 
 1. Exécute les deux codes ci-dessus. A-t-on le même résultat ?
 2. Modifie le deuxième code en remplaçant 5 par 10. Que se passe-t-il ?
+3. Ajoute l'instruction `echo "Fin";` à la ligne 7 et observe ce qui se passe.
 
-## Structure de conrtrôle While
+## La structure de conrtrôle While
 
 La syntaxe de cette structure de contrôle est : 
 
@@ -52,3 +53,44 @@ On affiche une ligne de 5 étoiles, puis on incrémente `$compteur`.
 3. On revérifie la condition `$compteur < 5` qui vaut true et on exécute à nouveau le même bloc...
 
 A force d'incrémenter la variable `compteur`, celle-ci va finir par prendre la valeur 6, et la condition `$compteur < 5` vaudra alors false, on arrête d'éxécuter le bloc des lignes 4 et 5. Ici, il n'y a plus de code après ce bloc, donc le programme s'arrête.
+ 
+Regardons un autre exemple. On va essayer d'afficher la liste des nombres pairs de 2 à 10. Ici, aussi on va utiliser la structure de contrôle `while`.
+
+``` php runnable
+<?php
+$nombre = 2;
+while ($nombre <= 10){
+    echo $nombre, "\n";
+    $nombre = $nombre + 2;
+}
+```
+
+## La structure de contrôle for
+
+Il arrivera souvent que l'on utilise les structures itératives pour répéter un bloc d'instructions un certain nombres de fois, comme nous venons de le 
+faire dans les exemples ci-dessus, et notre code aura la forme suivante : 
+
+```
+$compteur = 0
+while ($compteur < nombre) {
+    code
+    $compteur = $compteur + 1;
+}
+```
+
+où `nombre` sera le nombre de répétitions du bloc, et `code` le code à exécuter. La structure de contrôle for, qui est plus compacte, peut alors être utilisée
+de manière équivalente. Cette structure a la syntaxe suivante.
+
+```
+for ($compteur = 0; $compteur < nombre; $compteur = $compteur + 1){
+    code
+}
+```
+
+NB : A la place de `compteur = compteur + 1`, on peut utiliser `$compteur++` qui est équivalent.
+
+Essayer de refaire le code qui affiche un carré d'astéristique de taille 5, mais **en utilisant un for**.
+
+
+
+Essayer de refaire le code qui affiche les nombres pairs de 2 à 10, mais **en utilisant un for**.
