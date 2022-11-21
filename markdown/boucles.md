@@ -79,18 +79,31 @@ while ($compteur < nombre) {
 ```
 
 où `nombre` sera le nombre de répétitions du bloc, et `code` le code à exécuter. La structure de contrôle for, qui est plus compacte, peut alors être utilisée
-de manière équivalente. Cette structure a la syntaxe suivante.
+de manière équivalente : 
 
 ```
-for ($compteur = 0; $compteur < nombre; $compteur = $compteur + 1){
+for ($compteur = 0; $compteur < nombre ; $compteur = $compteur + 1){
     code
 }
 ```
 
 NB : A la place de `compteur = compteur + 1`, on peut utiliser `$compteur++` qui est équivalent.
 
-Essayer de refaire le code qui affiche un carré d'astéristique de taille 5, mais **en utilisant un for**.
+De  manière générale, la syntaxe de la structure de contrôle for est : 
 
+```
+for (initialisation; condition ; modification){
+    code
+}
+```
 
+où `initialisation` correspond à donner une première valeur à une variable, la `condition` qui va tester cette variable par rapport à certains critères, et la 
+`modification` qui va modifier la valeur de cette même variable afin que la valeur de `condition` deviennent false à un moment donné.
 
-Essayer de refaire le code qui affiche les nombres pairs de 2 à 10, mais **en utilisant un for**.
+- Essayer de refaire le code qui affiche un carré d'astéristique de taille 5, mais **en utilisant un for**.
+
+@[A toi d'essayer]({"stubs": ["for1.php"], "project":"for", "command": "/bin/bash run1.sh"})
+
+- Essayer de refaire le code qui affiche les nombres pairs de 2 à 10, mais **en utilisant un for**.
+
+@[A toi d'essayer]({"stubs": ["for2.php"], "project":"for", "command": "/bin/bash run2.sh"})

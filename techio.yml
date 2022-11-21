@@ -78,3 +78,8 @@ projects:
     runner:
        name: php
        version: latest
+  for:
+    root: /for
+    runner:
+       name: php
+       version: latest
