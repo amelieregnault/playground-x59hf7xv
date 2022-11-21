@@ -19,20 +19,24 @@ function lireLigne()
 
     $tab = [$data1, $data2, $data3, ""];
     $data = $tab[$compteur];
-    $compteur++;
+    $compteur ++;
     return $data;
 }
 
-$compteur=0;
+
 global $compteur;
-$data1 = getNumber();
-echo $data1, "\n";
 global $data1;
-$data2 = getNumber();
-echo $data2, "\n";
 global $data2;
-$data3 = getOperateur();
-echo $data3, "\n";
 global $data3;
 
-include './calculatrice.php';
+foreach (['addition', 'soustraction', 'multiplication'] as $op){ 
+    $compteur=0;
+    $data1 = getNumber();
+    echo $data1, "\n";
+    $data2 = getNumber();
+    echo $data2, "\n";
+    $data3 = $op;
+    echo $data3, "\n";
+    
+    include './calculatrice.php';
+}

@@ -24,14 +24,16 @@ if ((note1 + note2) / 2 >= 10) {
 
 ## Exercice 2 : Maximum
 
-Ecrire un programme qui affiche le maximum entre deux nombres `n1` et `n2`.
+Ecris un programme qui affiche le maximum entre deux nombres `n1` et `n2`, suivi d'un saut de ligne (`\n`).
 
 @[Ta solution]({"stubs": ["maximum.php"], "project":"maximum", "command": "/bin/bash run.sh"})
 
 ## Exercice 3 : Calculatrice
 
-Ecrire un programme qui effectue un calcul entre deux nombres `n1` et `n2` à l'aide
+Ecris un programme qui effectue un calcul entre deux nombres `n1` et `n2` à l'aide
 d'un opérateur `op` qui peut être prendre une des trois valeurs : 'addition', 'soustraction' ou 'multiplication'.
+
+Tu afficheras le résultat du calcul, suivi d'un saut de ligne `\n`;
 
 @[Ta solution]({"stubs": ["calculatrice.php"], "project":"calculatriceSimple", "command": "/bin/bash run.sh"})
 
