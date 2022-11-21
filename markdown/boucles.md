@@ -1,9 +1,9 @@
 # Les structures de contrôle itératives
 
-Il va souvent arriver que vous vouliez faire faire la même action (ou presque la même), plusieurs à un programme. Une possibilité est d'écrire plusieurs
+Il va souvent arriver que vous vouliez faire faire la même action (ou presque la même), plusieurs fois à un programme. Une possibilité est d'écrire plusieurs
 fois la même instruction. Une autre possibité est d'utiliser une structure de contrôle qui va refaire une même instruction autant de fois que nécessaire.
 
-Regardons cela avec un exemple. Si je souhaite dessiner un carré d'astérisque de côté 5, je peux écrire le code suivant : 
+Regardons cela avec un exemple. Si je souhaite dessiner un carré d'astérisques de côté 5, je peux écrire le code suivant : 
 
 ``` php runnable
 <?php
@@ -14,7 +14,7 @@ echo '* * * * *', "\n";
 echo '* * * * *', "\n";
 ```
 
-C'est faisable, ça fonctionne, mais si j'avais voulu faire un carré de taille 100, ce serait déjà beaucoup plus pénible pour moi et un carré de côté 1000,
+C'est faisable, ça fonctionne, mais si j'avais voulu faire un carré de taille 100, ce serait déjà beaucoup plus pénible et un carré de côté 1000,
 cela devient quasiment impossible.
 
 Utilisons plutôt une structure de contrôle itérative : 
@@ -42,7 +42,7 @@ while (cond) {
 }
 ```
 
-Cette structure de contrôle va nous permettre de répéter le bloc `code` tant que la condition que la condition `cond` vaut true. La condition `cond` peut être n'importe quelle expression booléenne. Lorsque la condition `cond` devient false, le block `code` n'est plus répété et le code qui suit le bloc est exécuté.
+Cette structure de contrôle va nous permettre de répéter le bloc `code` tant que la condition `cond` vaut true. La condition `cond` peut être n'importe quelle expression booléenne. Lorsque la condition `cond` devient false, le block `code` n'est plus répété et le code qui suit le bloc est exécuté.
 
 *Il faut faire attention à ce que la condition `cond` devienne false à un moment donné, sinon le programme va partir dans une boucle infinie.*
 
@@ -52,7 +52,7 @@ Dans notre exemple,
 On affiche une ligne de 5 étoiles, puis on incrémente `$compteur`.
 3. On revérifie la condition `$compteur < 5` qui vaut true et on exécute à nouveau le même bloc...
 
-A force d'incrémenter la variable `compteur`, celle-ci va finir par prendre la valeur 6, et la condition `$compteur < 5` vaudra alors false, on arrête d'éxécuter le bloc des lignes 4 et 5. Ici, il n'y a plus de code après ce bloc, donc le programme s'arrête.
+A force d'incrémenter la variable `compteur`, celle-ci va finir par prendre la valeur 6, et la condition `$compteur < 5` vaudra alors false, on arrête d'éxécuter le bloc des lignes 4 et 5 encore et encore. Ici, il n'y a plus de code après ce bloc, donc le programme s'arrête.
  
 Regardons un autre exemple. On va essayer d'afficher la liste des nombres pairs de 2 à 10. Ici, aussi on va utiliser la structure de contrôle `while`.
 
@@ -67,7 +67,7 @@ while ($nombre <= 10){
 
 ## La structure de contrôle for
 
-Il arrivera souvent que l'on utilise les structures itératives pour répéter un bloc d'instructions un certain nombres de fois, comme nous venons de le 
+Il arrivera souvent que l'on utilise les structures itératives pour répéter un bloc d'instructions un certain nombre de fois, comme nous venons de le 
 faire dans les exemples ci-dessus, et notre code aura la forme suivante : 
 
 ```
@@ -97,8 +97,8 @@ for (initialisation; condition ; modification){
 }
 ```
 
-où `initialisation` correspond à donner une première valeur à une variable, la `condition` qui va tester cette variable par rapport à certains critères, et la 
-`modification` qui va modifier la valeur de cette même variable afin que la valeur de `condition` deviennent false à un moment donné.
+où `initialisation` consiste à donner une première valeur à une variable, `condition` va tester cette variable par rapport à certains critères, et 
+`modification` va modifier la valeur de cette même variable afin que la valeur de `condition` deviennent false à un moment donné.
 
 - Essayer de refaire le code qui affiche un carré d'astéristique de taille 5, mais **en utilisant un for**.
 
@@ -149,7 +149,8 @@ Oui, nous verrons la structure de contrôle foreach dans le prochain chapitre su
 
 **Est-ce que je peux mettre une structure itérative dans le bloc de code d'une autre structure itérative ?**
 
-Oui, c'est tout à fait possible, et on le fait assez régulièrement quand on code. La structure qui est la plus à l'intérieur sera alors exécuté plusieurs fois.
+Oui, c'est tout à fait possible, et on le fait assez régulièrement quand on code. La structure qui est la plus à l'intérieur sera alors exécutée plusieurs fois.
+
 Admettons, qu'on ait un for qui répète son code 2 fois et qu'à l'intérieur de son code il y ait un autre for qui lui répète son code 3 fois. Alors le code du deuxième for sera répété en tout 6 fois.
 
 ``` php runnable
