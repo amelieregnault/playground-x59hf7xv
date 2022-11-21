@@ -7,11 +7,11 @@ Regardons cela avec un exemple. Si je souhaite dessiner un carré d'astérisque 
 
 ``` php runnable
 <?php
-echo '*****', "\n";
-echo '*****', "\n";
-echo '*****', "\n";
-echo '*****', "\n";
-echo '*****', "\n";
+echo '* * * * *', "\n";
+echo '* * * * *', "\n";
+echo '* * * * *', "\n";
+echo '* * * * *', "\n";
+echo '* * * * *', "\n";
 ```
 
 C'est faisable, ça fonctionne, mais si j'avais voulu faire un carré de taille 100, ce serait déjà beaucoup plus pénible pour moi et un carré de côté 1000,
@@ -23,7 +23,7 @@ Utilisons plutôt une structure de contrôle itérative :
 <?php
 $compteur = 0;
 while ($compteur < 5) {
-    echo '*****', "\n";
+    echo '* * * * *', "\n";
     $compteur = $compteur + 1;
 }
 ```
