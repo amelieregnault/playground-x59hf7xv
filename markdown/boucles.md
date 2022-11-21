@@ -32,7 +32,7 @@ while ($compteur < 5) {
 2. Modifie le deuxième code en remplaçant 5 par 10. Que se passe-t-il ?
 3. Ajoute l'instruction `echo "Fin";` à la ligne 7 et observe ce qui se passe.
 
-## La structure de conrtrôle While
+## La structure de contrôle While
 
 La syntaxe de cette structure de contrôle est : 
 
@@ -107,3 +107,60 @@ où `initialisation` correspond à donner une première valeur à une variable, 
 - Essayer de refaire le code qui affiche les nombres pairs de 2 à 10, mais **en utilisant un for**.
 
 @[A toi d'essayer]({"stubs": ["for2.php"], "project":"for", "command": "/bin/bash run2.sh"})
+
+## La structure de contrôle do-while
+
+Dans certains cas, on souhaitera faire un premier tour de boucle avant de tester la condition pour savoir si on continue. Dans ce cas, on peut utiliser la 
+structure de contrôle do-while, dont voici la syntaxe :
+
+```
+<?php
+do {
+  code
+} while (cond);
+```
+
+On exécute donc une première fois le bloc de code, puis on vérifie la condition `cond`. Si elle vaut true, alors on repart dans le bloc de code, sinon on continue le reste du programme.
+
+Voici un exemple:
+
+``` php runnable
+<?php
+do {
+    echo "Tu aimes bien la programmation ? ";
+    $i = rand(1,2);
+    if ($i === 1) {
+        $answer = "Non";
+    } else {
+        $answer = "Oui";
+    }
+    echo $answer, "\n";
+} while ($answer === "Non");
+echo "Ah! enfin !\n";
+```
+Dans cette exemple, on est sûr de poser au moins une fois la question "Tu aimes la programmation ?".
+
+
+## Explications supplémentaires
+
+**Existe-t-il d'autres structures de contrôles itératives ?**
+
+Oui, nous verrons la structure de contrôle foreach dans le prochain chapitre sur les tableaux.
+
+**Est-ce que je peux mettre une structure itérative dans le bloc de code d'une autre structure itérative ?**
+
+Oui, c'est tout à fait possible, et on le fait assez régulièrement quand on code. La structure qui est la plus à l'intérieur sera alors exécuté plusieurs fois.
+Admettons, qu'on ait un for qui répète son code 2 fois et qu'à l'intérieur de son code il y ait un autre for qui lui répète son code 3 fois. Alors le code du deuxième for sera répété en tout 6 fois.
+
+``` php runnable
+<?php
+for ($i = 0; $i < 2; $i++) {
+    echo "je suis dans le premier for \n";
+    for ($j = 0; $j <3; $j++) {
+        echo "je suis dans le deuxième for \n";
+    }
+}
+```
+
+N'hésite pas à changer les conditions des deux for (pour exemple en mettant `$i < 3` et `$j < 2`) et voir le résultat que s'affichera.
+
