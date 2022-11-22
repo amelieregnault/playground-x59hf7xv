@@ -12,6 +12,7 @@ function getName(): string
 function lireLigne()
 {
     global $data;
+    echo "\n";
     return $data;
 }
 

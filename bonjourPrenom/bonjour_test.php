@@ -19,7 +19,7 @@ if (str_contains($answer, 'exec') || str_contains($answer, 'script')) {
 
 // *************** Vérification du programme *************
 
-$phrase1 ="Comment t'appelles-tu ? " . $input;
+$phrase1 ="Comment t'appelles-tu ?";
 $phrase2 ="Bonjour " . $input;
 if (count($output)===2 && 
     $output[0] === $phrase1 && 
@@ -31,6 +31,8 @@ if (count($output)===2 &&
     echo("TECHIO> success false  \r\n");
     echo("TECHIO> message --channel 'Tips' Vérifie que ton code est le même que dans l'exemple ci-dessus.\r\n");
 }
+
+echo ("TECHIO> message --channel 'Données entrantes' nom = " . $input ."\r\n");
 
 // ************* Exécution du programme *************
 foreach ($output as $line){

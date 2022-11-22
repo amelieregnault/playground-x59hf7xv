@@ -35,8 +35,8 @@ if (count($output)===1 && $output[0] === $phrase){
     echo("TECHIO> success false  \r\n");
 }
 
-echo("TECHIO> message --channel 'Données entrantes' Rectangle 1 -> longueur : " . $input['length1'] . " ; largeur : " . $input['width1'] . "'\r\n");
-echo("TECHIO> message --channel 'Données entrantes' Rectangle 2 -> longueur : " . $input['length2'] . " ; largeur : " . $input['width2'] . "'\r\n");
+echo("TECHIO> message --channel 'Données entrantes' Rectangle 1 -> longueur : " . $input['length1'] . " ; largeur : " . $input['width1'] . "\r\n");
+echo("TECHIO> message --channel 'Données entrantes' Rectangle 2 -> longueur : " . $input['length2'] . " ; largeur : " . $input['width2'] . "\r\n");
 echo("TECHIO> message --channel 'Résulat attendu' " . $phrase . "\r\n");
 echo("TECHIO> message --channel 'Tips' Si tu ne trouves pas l'erreur sur la ligne indiquée par le compilateur, regarde la ligne précédente. \r\n");
 
