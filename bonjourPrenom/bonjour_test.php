@@ -11,7 +11,6 @@ if (str_contains($answer, 'exec') || str_contains($answer, 'script')) {
     $retval = 1;
 } else {
     exec('php ' . $wrap, $output);
-    var_dump($output);
     $input = $output[0];
     unset($output[0]);
     $output = array_values($output);
