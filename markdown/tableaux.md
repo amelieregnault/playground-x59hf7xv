@@ -80,21 +80,112 @@ pas les clés.
 Essayons de créer un tableau contenant des villes sans préciser les clés, lancez l'exécution et observer le résultat.
 ``` php runnable
 <?php
-print_r(
-    [
+$villes = [
         'Paris',
         'Nantes',
         'Strasbourg',
         'Nice',
         'Bordeaux',
-    ]
-);
+];
 
+print_r();
 ```
 
 Il est également possible de mettre le code sur une seule ligne, lorsque celle-ci n'est pas trop longue : 
 ```
-print_r(['Paris', 'Nantes', 'Strasbourg', 'Nice', 'Bordeaux']);
+$villes = ['Paris', 'Nantes', 'Strasbourg', 'Nice', 'Bordeaux'];
+```
+
+## Ajouter ou modifier des éléments à un tableau existant.
+
+Il est possible d'ajouter un nouveau couple clé/valeur à un tableau existant qui aura préalablement été stocké dans une variable.
+Si mon tableau s'appelle `$notes`, je peux ajouter une nouvelle note de la manière suivante.
+
+```
+$notes['SVT'] = 9;
+```
+
+Si la clé est déjà présente alors la valeur correspondant à cette clé sera modifiée et remplacée par la nouvelle valeur.
+
+De la même façon que pour la création de tableau, si vous ne précisez pas la clé, PHP se chargera de numéroter la nouvelle valeur en 
+continuant la numérotation déjà existante.
+
+```
+$villes[] = 'Marseille';
+```
+
+## Création d'un tableau ligne à ligne.
+
+Il arrivera souvent que nous devions créer les lignes du tableau les unes après les autres, en partant d'un tableau vide. Dans la majorité des cas, 
+nous ferons cela pour utiliser une boucle et ainsi éviter des répétitions de code. 
+Voici un exemple : on veut tirer au sort 10 numéros et les stocker dans un tableau.
+
+``` php runnable
+<?php
+$tirage = [];
+for ($i = 0 ; $i < 10 ; $i++) {
+    $tirage[] = rand(1, 99);
+}
+print_r($tirage);
+```
+
+## Récupération d'une valeur à l'aide de sa clé.
+
+Il est facile de récupérer un élément d'un tableau si l'on connait sa clé. Il suffit d'utiliser l'expression `$tab[cle]`, où `$tab` est la variable qui stocke 
+le tableau et `cle` la clé de l'élément à récupérer. 
+
+## Parcours d'un tableau avec une boucle for
+
+Il arrivera souvent que nous souhaitions parcourir l'ensemble des valeurs d'un tableau pour faire un calcul, ou pour afficher les éléments du tableau par exemple. 
+
+La première solution est d'utiliser une boucle **for** (ou **while**), comme dans l'exemple suivant, où l'on souhaite faire le produit de tous les nombres
+contenus dans un tableau.
+
+``` php runnable
+$nombres = [3, 5, 2, 5, 8, 10];
+
+$produit = 1;
+$nbNombres = count($nombres);
+for ($i = 0; $i < $nbNombres; $i++){
+    $produit = $produit * $nombres[i];
+}
+echo $produit;
+```
+
+Ici, on est obligé d'utiliser la fonction `count()` pour connaître le nombre d'éléments dans le tableau.
+
+On remarquera que cette méthode ne fonctionnera que si les clés sont des entiers et qu'ils sont numérotés dans l'ordre. Il existe donc une autre méthode.
+
+## Parcours d'un tableau avec une boucle foreach
+
+Comme son nom l'indique, ce type de boucle va parcourir **chaque** élément du tableau un par un. À chaque tour de boucle, la clé et la valeur de l'élément
+seront stockées dans deux variables qui seront précisées lors de la mise en place de la boucle.
+
+Cela donne donc la syntaxe suivante : 
+```
+foreach ($tab as $key => $value){
+    code à répéter
+}
+```
+où `$tab` est la variable stockant le tableau, `$key` et `$value` les variables permettant de stocker la clé et la valeur de l'élément en train d'être 
+parcouru la boucle foreach.
+
+Si nous n'avons pas besoin de la clé, on peut simplement écrire : 
+```
+foreach ($tab as $value){
+    code à répéter
+}
+```
+
+On peut ainsi réécrire le code permettant de calculer le produit d'un ensemble de nombres de la manière suivante : 
+``` php runnable
+$nombres = [3, 5, 2, 5, 8, 10];
+
+$produit = 1;
+foreach ($nombres as $nb){
+    $produit = $produit * $nb;
+}
+echo $produit;
 ```
 
 ## Explications supplémentaires
@@ -102,3 +193,12 @@ print_r(['Paris', 'Nantes', 'Strasbourg', 'Nice', 'Bordeaux']);
 **Est-ce que je peux stocker plusieurs fois la même valeur dans un tableau ?**
 
 Oui, c'est tout à fait possible. Seules les clés doivent être uniques.
+
+**Est-ce qu'on peut supprimer un couple clé/valeur d'un tableau ?**
+
+Oui, c'est possible, en utilisant la fonction `unset()`. Si j'ai un tableau stocké dans une variable `$populations` et que je veux
+supprimer la ligne dont la clé est `'France'`, il suffit de faire `unset($populations['France']);`. Cette fonction peut également 
+servir à supprimer une variable, bien qu'on le fasse que très rarement.
+
+Attention, dans les tableaux où les valeurs sont numérotées par de clé de type entier, si vous supprimez la valeur reliée à la clé 3 dans un 
+tableau de 5 éléments, il ne restera plus que 4 éléments numérotés 0, 1, 2, 4. Les numéros ne se suiveront plus.
