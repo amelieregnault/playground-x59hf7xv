@@ -130,6 +130,17 @@ On verra, plus tard, qu'on peut également
 - la stocker dans un tableau
 - la passer en paramètre d'une fonction
 
+**Est-ce qu'il existe d'autres types d'expression que celles obtenues grâce à des opérateurs ?**
+
+Oui, une expression est un morceau de code qui, une fois évaluée, correspond à une valeur.
+Une expression peut donc aussi être : 
+- une valeur : un entier, une chaîne de caractère, ...
+- une variable
+- un tableau ou une cellule de tableau
+- un appel de fonction
+
+Les deux derniers points seront vus un peu plus tard.
+
 **C'est quoi `var_dump` ?**
 
 La fonction `var_dump` est une fonction très pratique qui permet de connaître le type et la valeur d'une expression (et donc aussi d'une variable) au cours

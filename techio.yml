@@ -22,6 +22,10 @@ plan:
        statement: markdown/conditionnelleExercices.md
      - title: Structures de contrôle itératives
        statement: markdown/boucles.md
+ - title : Tableaux
+   plan:
+     - title: Les tableaux
+       statement: markdown/tableaux.md 
 projects:
   helloWorld:
     root: /helloWorld
