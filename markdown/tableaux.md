@@ -142,6 +142,7 @@ La première solution est d'utiliser une boucle **for** (ou **while**), comme da
 contenus dans un tableau.
 
 ``` php runnable
+<?php
 $nombres = [3, 5, 2, 5, 8, 10];
 
 $produit = 1;
