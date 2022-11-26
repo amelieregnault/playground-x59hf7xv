@@ -68,7 +68,7 @@ où de manière équivalente :
 ]
 ```
 
-NB : Un tableau est une expression et peut donc être stocké dans une valeurs, utilisé dans une expression arithmétiques ou logiques, passé en paramètre 
+NB : Un tableau est une expression et peut donc être stocké dans une variable, utilisé dans une expression arithmétique ou logique, passé en paramètre 
 d'une fonction, et même stocké comme valeur dans un tableau.
 
 ## Création d'un tableau sans préciser les clés
@@ -77,7 +77,7 @@ Il est très pratique en informatique de numéroter les éléments d'un tableau 
 de langage de programmation quand on créé un tableau). Et c'est tellement pratique, que PHP va se charger de le faire pour vous, si vous ne précisez
 pas les clés. 
 
-Essayons de créer un tableau contenant des villes sans préciser les clés, lancez l'exécution et observer le résultat.
+Essayons de créer un tableau contenant des villes sans préciser les clés. Lancez l'exécution et observer le résultat.
 ``` php runnable
 <?php
 $villes = [
@@ -105,9 +105,9 @@ Si mon tableau s'appelle `$notes`, je peux ajouter une nouvelle note de la mani�
 $notes['SVT'] = 9;
 ```
 
-Si la clé est déjà présente alors la valeur correspondant à cette clé sera modifiée et remplacée par la nouvelle valeur.
+Si la clé est déjà présente alors la valeur correspondant à cette clé sera remplacée par la nouvelle valeur.
 
-De la même façon que pour la création de tableau, si vous ne précisez pas la clé, PHP se chargera de numéroter la nouvelle valeur en 
+De la même façon que pour la création de tableau, si vous ne précisez pas la clé, PHP se chargera de numéroter la nouvelle valeur en partant de 0, ou en 
 continuant la numérotation déjà existante.
 
 ```
