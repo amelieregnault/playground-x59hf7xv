@@ -1,7 +1,7 @@
 # Les tableaux
 
 Nous avons vu qu'il était possible de stocker la valeur d'une expression dans une variable. Mais comment faire si nous avons 
-beaucoup de valeurs à stocker, comme par exemple, pour stocker l'ensemble des notes au contrôle d'informatique. En fonction de
+beaucoup de valeurs à stocker, comme par exemple, pour l'ensemble des notes au contrôle d'informatique. En fonction de
 la taille de la classe, cela peut facilement représenter 25 notes, voire plus. Cela ne va pas être gérable de créer et d'utiliser
 une variable pour chacune de ces notes.
 
