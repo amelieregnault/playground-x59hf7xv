@@ -88,7 +88,7 @@ $villes = [
         'Bordeaux',
 ];
 
-print_r();
+print_r($villes);
 ```
 
 Il est également possible de mettre le code sur une seule ligne, lorsque celle-ci n'est pas trop longue : 
