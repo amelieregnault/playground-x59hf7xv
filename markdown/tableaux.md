@@ -148,7 +148,7 @@ $nombres = [3, 5, 2, 5, 8, 10];
 $produit = 1;
 $nbNombres = count($nombres);
 for ($i = 0; $i < $nbNombres; $i++){
-    $produit = $produit * $nombres[i];
+    $produit = $produit * $nombres[$i];
 }
 echo $produit;
 ```
@@ -180,6 +180,7 @@ foreach ($tab as $value){
 
 On peut ainsi réécrire le code permettant de calculer le produit d'un ensemble de nombres de la manière suivante : 
 ``` php runnable
+<?php
 $nombres = [3, 5, 2, 5, 8, 10];
 
 $produit = 1;
