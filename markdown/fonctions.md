@@ -139,7 +139,7 @@ Créons une fonction qui affiche un carré d'astéristiques pour une taille donn
 function printCarre($taille)
 {
     for ($i = 0; $i < $taille; $i++){
-        for ($j = 0; $j < taille; $j++){
+        for ($j = 0; $j < $taille; $j++){
             echo '* ';
         }
         echo "\n";
@@ -211,10 +211,10 @@ ou si je veux un autre mode d'arrondi, il faudra que je le précise en ajoutant 
 
 ```php runnable
 <?php
-echo (3.458), "\n";
-echo (3.457, 1), "\n";
-echo (3.457, 0, PHP_ROUND_HALF_DOWN), "\n";
-echo (3.457, 1, PHP_ROUND_HALF_DOWN), "\n";
+echo round(3.458), "\n";
+echo round(3.457, 1), "\n";
+echo round(3.457, 0, PHP_ROUND_HALF_DOWN), "\n";
+echo round(3.457, 1, PHP_ROUND_HALF_DOWN), "\n";
 
 ```
 
