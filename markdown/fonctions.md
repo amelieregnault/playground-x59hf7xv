@@ -1,20 +1,20 @@
 # Les fonctions
 
-Nous sommes maintenant capable d'écrire du code pour résoudre à peu près n'importe quel problème. Mais vous allez voir rapidement que le code que 
-vous allez écrire ne sera pas satisfaisant pour écrire de gros programme. Celui va devenir très long, et de nombreux morceaux de code vont se 
+Nous sommes maintenant capable d'écrire du code pour résoudre à peu près n'importe quel problème. Mais vous allez voir rapidement que, pour un gros programme, 
+le code que vous allez obtenir ne sera pas satisfaisant. Celui sera très long, sans organisation réelle, et de nombreux morceaux de code vont se 
 répéter, car il n'est pas rare de devoir faire plusieurs fois la même chose dans un programme.
 
 Votre programme sera alors peu lisible et comportera de nombreuses répétitions. Ceci n'est pas souhaitable car :
-- cela augmente le risque de bugs, plus il y a de code, plus il y a potentiellement de bugs
-- cela va rendre plus compliqué le modification. Si nous souhaitons modifier du code à un endroit du code qui est répété plusieurs fois, il faudra
+- cela augmente le risque de bugs. Plus il y a de code, plus il y a potentiellement de bugs
+- cela va rendre plus compliqué les modifications. Si nous souhaitons faire une modification dans un morceau de code qui est répété plusieurs fois, il faudra
   faire cette modification autant de fois que nécessaire, avec un risque d'oublier un endroit et un risque d'introduire des bugs.
 
 Pour éviter le code répété "localement", nous avons vus qu'il était possible d'utiliser une boucle, mais si le code répété se trouve dispatché à différents
 endroits du programme, nous pourrons utiliser une fonction.
 
-Une fonction va nous permettre de créer du code qui sera à l'extérieur de notre programme principal et que nous pourrons appeler lorsque nous en aurons 
-besoin. Chaque fonction peut être considérée comme un mini programme qui a un seule objectif, par exemple, calculer le produit des valeurs d'un tableau.
-Admettons que nous ayons besoin de faire ce calcul plusieurs fois dans notre code, et créer une fonction qui va calculer et nous retourner le résultat.
+Une fonction va nous permettre de créer du code qui sera à l'"extérieur" de notre programme principal et que nous pourrons appeler lorsque nous en aurons 
+besoin. Chaque fonction peut être considérée comme un mini programme qui a un seul objectif, par exemple, calculer le produit des valeurs d'un tableau.
+Admettons que nous ayons besoin de faire ce calcul plusieurs fois dans notre code, et créons une fonction qui va calculer et nous retourner le résultat.
 
 ``` php runnable
 <?php
@@ -41,16 +41,16 @@ echo $prod, "\n";
 Maintenant, si nous devons encore faire le produit des éléments d'un tableau, nous n'avons pas besoin de réécrire le code correspondant, mais 
 simplement d'appeler la fonction `calculProduit()` avec un autre tableau en paramètre.
 
-Voyons plus en détail comme cela fonctionne.
+Voyons plus en détail comment cela fonctionne.
 
 ## Création d'une fonction
 
 Pour créer une fonction, nous allons utiliser le mot-clé `function` suivi du nom de la fonction, afin de pouvoir si référer quand nous en aurons besoin, et d'une paire de parenthèses, qui est obligatoire, même s'il n'y a pas de paramètres. Le code de la fonction étant un bloc, il faut l'entourer d'une paire d'accolade. 
 
-Il faut savoir que toutes les variables créées dans une fonction sont propres à la fonction et ne sont plus accessibles une fois l'exécution de la fonction terminée. Nous ne pouvons donc pas utiliser ce moyen pour récupérer le résultat d'un calcul. On utilise donc le mot-clé `return` pour retourner la valeur calculée.
+Il faut savoir que toutes les variables créées dans une fonction sont propres à la fonction et ne sont plus accessibles une fois l'exécution de la fonction terminée. Nous ne pouvons donc pas utiliser ce moyen pour récupérer le résultat d'un calcul. On utilisera donc le mot-clé `return` pour retourner la valeur calculée.
 
 A l'inverse, nous pouvons avoir besoin de variables qui se trouve à l'extérieur de la fonction pour faire nos calculs, et là aussi, la fonction n'y pas accès.
-Rappelons que la fonction est vraiment à l'extérieur du programme principal. Dans ce cas, nous ajouterons des paramètres à la fonction, un pour chaque élément nécessaire. Une fois déclarée, les paramètres sont comme des variables. 
+Rappelons que la fonction est à l'extérieur du programme principal. Dans ce cas, nous ajouterons des paramètres à la fonction, un pour chaque élément nécessaire. Une fois déclarée, les paramètres sont comme des variables. 
 
 Cela nous donne donc la syntaxe suivante : 
 
@@ -129,8 +129,10 @@ echo puissance(5, 2), "\n";
 echo puissance(2, 10), "\n";
 ```
 
+*NB: cette fonction existe dans PHP et s'appelle `pow`.*
+
 ### Une fonction sans `return`
-Créons une fonction qui affiche un carré d'astéristique pour une taille donnée en paramètre.
+Créons une fonction qui affiche un carré d'astéristiques pour une taille donnée en paramètre.
 
 ``` php runnable
 <?php
@@ -153,7 +155,7 @@ Ici, l'appel de la fonction est une instruction et je peux donc l'utiliser direc
 
 ## Les fonctions prédéfinies
 
-Un certain nombre de fonctions ont déjà créées dans PHP, et vous pouvez donc les utiliser dans votre code. Vous en connaissez déjà quelques-une : `rand()`,
+Un certain nombre de fonctions ont déjà créées dans PHP, et vous pouvez donc les utiliser dans votre code. Vous en connaissez déjà quelques-unes : `rand()`,
 `print_r()`, `count()`. 
 
 Avant de vous lancer dans une fonction compliquée, vous pouvez vérifiez que celle-ci n'existe pas déjà. Les pages suivantes de la documentation PHP 
@@ -196,10 +198,10 @@ round(int|float $num, int $precision = 0, int $mode = PHP_ROUND_HALF_UP): float
 On retrouve le nom de la fonction `round` suivie de ses paramètres. 
 - Le premier est décrit par `int|float $num`, et signifie que la fonction attend qu'on lui passe un entier ou un flottant. Si on lui passe autre chose, il y
 aura une erreur.  Ce paramètre correspond au nombre à arrondir.
-- Le second paramètre est décrit par `int $precision = 0`. Lorsqu'il y a un égal, cela signifie que le paramètre à une valeur par défaut (ici 0) et que le paramètre est 
-facultatif. Le paramètre est de type entier, ce qui est logique, puisqu'il correspond au nombre de décimales à garder.
+- Le second paramètre est décrit par `int $precision = 0`. Lorsqu'il y a un `=`, cela signifie que le paramètre à une valeur par défaut (ici 0) et que le paramètre est facultatif. 
+Le paramètre est de type entier, ce qui est logique, puisqu'il correspond au nombre de décimales à garder.
 - Le troisième paramètre est décrit par `int $mode = PHP_ROUND_HALF_UP`. Là, encore c'est un paramètre facultatif qui doit être un entier. Vous me direz que
-`PHP_ROUND_HALF_UP` n'est pas un entier. En fait si, c'est un constante à laquelle on a attribuer un entier (probablement 0 ou 1). Ici, le développeur a décidé d'utiliser une constante pour rendre plus explicite chaque option possible. Plus loin dans la documentation, on vous indique les différentes constantes que vous pouvez utiliser.
+`PHP_ROUND_HALF_UP` n'est pas un entier. En fait si, c'est un constante à laquelle on a attribué un entier (probablement 0 ou 1). Ici, le développeur a décidé d'utiliser une constante pour rendre plus explicite chaque option possible. Plus loin dans la documentation, on vous indique les différentes constantes que vous pouvez utiliser.
 
 La signature se termine par `: float` et cela correspond au type de la valeur qui est retournée par la fonction. Ici, on nous retournera un flottant, même si
 on arrondit à l'entier près.
@@ -216,7 +218,7 @@ echo (3.457, 1, PHP_ROUND_HALF_DOWN), "\n";
 
 ```
 
-A retenir : en précisant les types des arguments d'une fonction, vous obligez le programmeur à transmettre des valeurs d'un certain type et vous pouvez vous 
+A retenir : en précisant les types des arguments d'une fonction, vous obligez le programmeur à transmettre des valeurs d'un certain type et vous pouvez 
 ainsi éviter certains bugs, comme par exemple, essayer d'additionner des chaînes de caractères.
 
 **Ca sert à quoi les deux slashs `//` dans le premier exemple ?**
