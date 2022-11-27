@@ -66,6 +66,7 @@ Le mot-clé `return` va retourner l'expression qui le suit et terminer la foncti
 pas exécuté, comme on peut le constater dans le programme suivant : 
 
 ``` php runnable
+<?php
 function plusieursReturn()
 {
     return "Je vais m'afficher";
@@ -95,6 +96,7 @@ Voyons plusieurs fonctions pour différents cas de figures.
 Créons une fonction qui va retourner un tableau de 10 nombres aléatoires.
 
 ``` php runnable
+<?php
 function tableauAleatoire(){
     $tirage = [];
     for ($i = 0 ; $i < 10 ; $i++) {
@@ -108,7 +110,8 @@ print_r(tableauAleatoire());
 
 ### Une fonction avec deux paramètres
 Une fonction qui calcule la puissance n-ième d'un nombre.
-```
+``` php runnable
+<?php
 function puissance($num, $n)
 {
     if ($n == 0) {
