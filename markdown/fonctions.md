@@ -120,13 +120,13 @@ function puissance($num, $n)
 
     $p = 1;
     for ($i = 0; $i < $n; $i++){
-        $p = $p * $n;
+        $p = $p * $num;
     }
     return $p;
 }
 
-echo puissance(5, 2);
-echo puissance(5, 10);
+echo puissance(5, 2), "\n";
+echo puissance(5, 10), "\n";
 ```
 
 ## Explications supplémentaires
