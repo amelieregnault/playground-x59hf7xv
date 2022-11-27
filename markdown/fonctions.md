@@ -211,9 +211,9 @@ ou si je veux un autre mode d'arrondi, il faudra que je le précise en ajoutant 
 
 ```php runnable
 <?php
-echo round(3.657), "\n";
+echo round(3.5), "\n";
 echo round(3.647, 1), "\n";
-echo round(3.667, 0, PHP_ROUND_HALF_DOWN), "\n";
+echo round(3.5, 0, PHP_ROUND_HALF_DOWN), "\n";
 echo round(3.667, 1, PHP_ROUND_HALF_DOWN), "\n";
 
 ```
