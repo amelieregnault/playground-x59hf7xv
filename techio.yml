@@ -26,6 +26,10 @@ plan:
    plan:
      - title: Les tableaux
        statement: markdown/tableaux.md 
+ - title : Fonctions
+   plan:
+     - title: Les fonctions
+       statement: markdown/fonctions.md
 projects:
   helloWorld:
     root: /helloWorld
