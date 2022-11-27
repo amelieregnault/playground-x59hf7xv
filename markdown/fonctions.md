@@ -37,3 +37,105 @@ $prod = calculerProduit([3, 5, 2, 5, 8, 10]);
 echo $prod, "\n";
 
 ```
+
+Maintenant, si nous devons encore faire le produit des éléments d'un tableau, nous n'avons pas besoin de réécrire le code correspondant, mais 
+simplement d'appeler la fonction `calculProduit()` avec un autre tableau en paramètre.
+
+Voyons plus en détail comme cela fonctionne.
+
+## Création d'une fonction
+
+Pour créer une fonction, nous allons utiliser le mot-clé `function` suivi du nom de la fonction, afin de pouvoir si référer quand nous en aurons besoin, et d'une paire de parenthèses, qui est obligatoire, même s'il n'y a pas de paramètres. Le code de la fonction étant un bloc, il faut l'entourer d'une paire d'accolade. 
+
+Il faut savoir que toutes les variables créées dans une fonction sont propres à la fonction et ne sont plus accessibles une fois l'exécution de la fonction terminée. Nous ne pouvons donc pas utiliser ce moyen pour récupérer le résultat d'un calcul. On utilise donc le mot-clé `return` pour retourner la valeur calculée.
+
+A l'inverse, nous pouvons avoir besoin de variables qui se trouve à l'extérieur de la fonction pour faire nos calculs, et là aussi, la fonction n'y pas accès.
+Rappelons que la fonction est vraiment à l'extérieur du programme principal. Dans ce cas, nous ajouterons des paramètres à la fonction, un pour chaque élément nécessaire. Une fois déclarée, les paramètres sont comme des variables. 
+
+Cela nous donne donc la syntaxe suivante : 
+
+```
+function nomFonction ($param1, ...)
+{
+    le code de la fonction
+    return expression;
+}
+```
+
+Le mot-clé `return` va retourner l'expression qui le suit et terminer la fonction. Cela signifie que même s'il y a du code après le return, celui-ci ne sera
+pas exécuté, comme on peut le constater dans le programme suivant : 
+
+``` php runnable
+function plusieursReturn()
+{
+    return "Je vais m'afficher";
+    return "Je ne vais pas m'afficher";
+}
+
+echo plusieursReturn();
+```
+
+*NB : le nom de la fonction suit les mêmes règles et conventions de nommage des variables (Attention, ne mettez pas de `$` pour les noms de fonction).*
+
+
+## Appel d'une fonction
+
+Une fonction étant en dehors du programme principal, celle-ci ne sera jamais exécutée si nous ne l'appelons pas, i.e. si nous n'y faisons pas référence.
+
+Pour appeler une fonction, il suffit d'indiquer son nom, suivi d'une paire de parenthèses, contenant éventuellement les valeurs à attribuer à ses paramètres, comme ceci : `nomFonction(expr1,...)`.
+
+L'appel d'une fonction est une expression si la fonction retourne une valeur, sinon c'est une instruction.
+
+## Exemples
+
+Voyons plusieurs fonctions pour différents cas de figures.
+
+### Une fonction sans paramètre
+
+Créons une fonction qui va retourner un tableau de 10 nombres aléatoires.
+
+``` php runnable
+function tableauAleatoire(){
+    $tirage = [];
+    for ($i = 0 ; $i < 10 ; $i++) {
+        $tirage[] = rand(1, 99);
+    }
+    return $tirage;
+}
+
+print_r(tableauAleatoire());
+```
+
+### Une fonction avec deux paramètres
+Une fonction qui calcule la puissance n-ième d'un nombre.
+```
+function puissance($num, $n)
+{
+    if ($n == 0) {
+        return 1;
+    }
+
+    $p = 1;
+    for ($i = 0; $i < $n; $i++){
+        $p = $p * $n;
+    }
+    return $p;
+}
+
+echo puissance(5, 2);
+echo puissance(5, 10);
+```
+
+## Explications supplémentaires
+
+**Est-ce que je peux appeler une fonction depuis une autre fonction ?**
+
+**Est-ce que je peux utiliser l'appel d'une fonction comme paramètre d'une autre fonction ?**
+
+**Que se passe-t-il si je modifie la valeur d'un paramètre dans ma fonction ?**
+
+**Pourquoi ne pas toujours utiliser un `echo` et un `print_r` dans la fonction pour afficher le résultat, au lieu du `return` ?** 
+
+**Quand la documentation d'une fonction prédéfinie dans PHP, il y a plein de types partout, ça correspond à quoi ?**
+
+**Ca sert à quoi les deux slashs `//` dans le premier exemple ?**
