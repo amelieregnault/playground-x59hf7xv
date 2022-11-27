@@ -215,7 +215,6 @@ echo round(3.5), "\n";
 echo round(3.647, 1), "\n";
 echo round(3.5, 0, PHP_ROUND_HALF_DOWN), "\n";
 echo round(3.667, 1, PHP_ROUND_HALF_DOWN), "\n";
-
 ```
 
 A retenir : en précisant les types des arguments d'une fonction, vous obligez le programmeur à transmettre des valeurs d'un certain type et vous pouvez 
