@@ -26,12 +26,14 @@ plan:
    plan:
      - title: Les tableaux
        statement: markdown/tableaux.md 
-     - title: Les tableaux - Exercices
+     - title: Tableaux - Exercices
        statement: markdown/tableauxExercices.md
  - title : Fonctions
    plan:
      - title: Les fonctions
        statement: markdown/fonctions.md
+     - title: Fonctions - Exercices
+       statement: markdown/fonctionsExercices.md
 projects:
   helloWorld:
     root: /helloWorld
