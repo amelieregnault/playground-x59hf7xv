@@ -26,6 +26,8 @@ plan:
    plan:
      - title: Les tableaux
        statement: markdown/tableaux.md 
+     - title: Les tableaux - Exercices
+       statement: markdow/tableauxExercices.md
  - title : Fonctions
    plan:
      - title: Les fonctions
